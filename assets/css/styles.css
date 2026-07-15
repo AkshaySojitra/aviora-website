@@ -180,24 +180,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .site-header .nav-row{
   display:flex; align-items:center; justify-content:space-between;
-  height:82px;
+  height:96px;
 }
 .logo{
   display:flex; align-items:center; gap:10px;
 }
 .logo-img{
-  height:38px;
+  height:52px;
   width:auto;
   display:block;
   background:#fff;
-  border-radius:6px;
-  padding:4px 10px;
+  border-radius:8px;
+  padding:6px 14px;
 }
 .logo-img-footer{
-  height:34px;
+  height:46px;
 }
 @media (min-width:960px){
-  .logo-img{ height:44px; }
+  .logo-img{ height:64px; padding:8px 18px; }
 }
 
 .main-nav{ display:none; align-items:center; gap:36px; }
@@ -246,7 +246,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background:var(--dark);
   color:#fff;
   overflow:hidden;
-  padding-top:150px;
+  padding-top:164px;
   padding-bottom:0;
 }
 .hero-grid{
