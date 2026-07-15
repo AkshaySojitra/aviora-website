@@ -4,332 +4,393 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AVIORA MedTech | Advanced Surgical Devices</title>
-<meta name="description" content="AVIORA MedTech develops advanced surgical technologies and collaborates with globally recognized manufacturing partners to deliver precision surgical devices for modern healthcare.">
-<link rel="canonical" href="https://www.avioramedtech.com/">
+<meta name="description" content="AVIORA MedTech develops advanced surgical technologies and collaborates with globally recognized manufacturing partners to deliver precision surgical devices for modern healthcare in India.">
+<link rel="canonical" href="https://www.avioramedtech.com/index.html">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="AVIORA MedTech | Advanced Surgical Devices">
-<meta property="og:description" content="AVIORA MedTech develops advanced surgical technologies and collaborates with globally recognized manufacturing partners to deliver precision surgical devices for modern healthcare.">
-<meta property="og:url" content="https://www.avioramedtech.com/">
-<meta property="og:site_name" content="AVIORA MedTech">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AVIORA MedTech | Advanced Surgical Devices">
-<meta name="twitter:description" content="AVIORA MedTech develops advanced surgical technologies and collaborates with globally recognized manufacturing partners to deliver precision surgical devices for modern healthcare.">
+<meta property="og:type"        content="website">
+<meta property="og:title"       content="AVIORA MedTech | Advanced Surgical Devices">
+<meta property="og:description" content="AVIORA MedTech develops advanced surgical technologies and collaborates with globally recognized manufacturing partners to deliver precision surgical devices for modern healthcare in India.">
+<meta property="og:url"         content="https://www.avioramedtech.com/index.html">
+<meta property="og:site_name"   content="AVIORA MedTech">
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="AVIORA MedTech | Advanced Surgical Devices">
+<meta name="twitter:description" content="AVIORA MedTech develops advanced surgical technologies and collaborates with globally recognized manufacturing partners to deliver precision surgical devices for modern healthcare in India.">
 
 <link rel="icon" type="image/png" href="assets/images/favicon-32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="512x512">
-<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="assets/images/favicon.png"    sizes="512x512">
+<link rel="apple-touch-icon"      href="assets/images/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="wrap nav-row">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo-transparent.png" alt="Aviora Medtech" class="logo-img">
-      </a>
+<a href="#main-content" class="sr-only" style="position:absolute;left:-9999px;top:4px;padding:8px 16px;background:var(--primary);color:#fff;border-radius:4px;font-weight:600;z-index:9999;">Skip to main content</a>
 
-      <nav class="main-nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
+<header class="site-header" role="banner">
+  <div class="wrap nav-row">
+    <a href="index.html" class="logo" aria-label="AVIORA MedTech home">
+      <img src="assets/images/logo-transparent.png" alt="AVIORA MedTech" class="logo-img">
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
         <a href="products.html">Products</a>
         <a href="quality.html">Quality</a>
         <a href="manufacturing.html">Manufacturing</a>
         <a href="distributors.html">Distributors</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <a href="contact.html" class="btn btn-primary" style="padding:10px 18px;">Request a Quote</a>
-        
-        <button class="mobile-toggle" aria-label="Open menu" aria-controls="mobileMenu">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        </button>
-      </div>
+    </nav>
+    <div class="header-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm" style="display:none;" id="hdrQuote">Request Quote</a>
+      <button class="mobile-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="wrap nav-row" style="height:82px;">
-      <span class="logo"><img src="assets/images/logo-transparent.png" alt="Aviora Medtech" class="logo-img"></span>
-    </div>
-    <nav class="wrap" aria-label="Mobile" style="display:flex;flex-direction:column;">
-      <a href="index.html" aria-current="page">Home</a>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="mm-head">
+    <img src="assets/images/logo-transparent.png" alt="AVIORA MedTech" style="height:42px;">
+    <button class="mm-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Mobile navigation">
+    <a href="index.html" aria-current="page">Home</a>
       <a href="products.html">Products</a>
       <a href="quality.html">Quality</a>
       <a href="manufacturing.html">Manufacturing</a>
       <a href="distributors.html">Distributors</a>
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary" style="margin-top:20px;justify-content:center;">Get a Quote</a>
-    </nav>
-  </div>
-<main>
+  </nav>
+  <a href="contact.html" class="btn btn-gradient" style="margin-top:24px;justify-content:center;">Request a Quote</a>
+</div>
 
+<main id="main-content">
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-bg-grid" aria-hidden="true"></div>
+  <div class="hero-bg-glow"  aria-hidden="true"></div>
+  <div class="hero-bg-glow-2" aria-hidden="true"></div>
+
   <div class="wrap hero-inner">
+    <!-- Left: text -->
     <div>
-      <span class="eyebrow" style="color:#7dd3fc;">Made in India &middot; ISO 13485:2016</span>
-      <h1 style="margin-top:18px;">Advanced Surgical Devices <em>Engineered for Precision</em>.</h1>
+      <div class="hero-eyebrow">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" fill="currentColor"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+        Advanced Surgical Devices &middot; India
+      </div>
+      <h1>Precision Surgical Technologies for <em>Modern Healthcare</em></h1>
       <p class="hero-sub">AVIORA MedTech develops advanced surgical technologies and partners with world-class manufacturing facilities to deliver precision surgical solutions trusted by healthcare professionals across India.</p>
       <div class="hero-actions">
-        <a href="products.html" class="btn btn-accent">Explore Products</a>
-        <a href="contact.html" class="btn btn-ghost-white">Talk to Our Team</a>
+        <a href="products.html" class="btn btn-gradient btn-lg">Explore Products</a>
+        <a href="distributors.html" class="btn btn-ghost-white btn-lg">Become a Distributor</a>
+        <a href="contact.html" class="btn btn-ghost-white btn-lg" style="border-color:rgba(255,255,255,0.15);">Contact Us</a>
       </div>
     </div>
 
-    <div class="diagram-frame reveal">
-      <svg viewBox="0 0 420 320" width="100%" role="img" aria-label="Technical line diagram of a linear cutter stapler">
-        <line x1="30" y1="260" x2="390" y2="260" stroke="rgba(255,255,255,0.15)" stroke-dasharray="2 6"/>
-        <g stroke="#7dd3fc" stroke-width="1.4" fill="none" opacity="0.9">
-          <rect x="50" y="120" width="230" height="26" rx="4"/>
-          <rect x="280" y="112" width="70" height="42" rx="4"/>
-          <path d="M350 133 L385 133" />
-          <path d="M385 118 L385 148 M50 108 L50 158" stroke="rgba(255,255,255,0.35)"/>
-          <path d="M60 146 L60 190 M270 146 L270 190" stroke="rgba(255,255,255,0.3)" stroke-dasharray="2 4"/>
-        </g>
-        <circle cx="65" cy="133" r="3" fill="#00C48C"/>
-        <circle cx="315" cy="133" r="3" fill="#00C48C"/>
-        <text x="50" y="185" fill="rgba(255,255,255,0.55)" font-family="IBM Plex Mono, monospace" font-size="10">45mm CARTRIDGE</text>
-        <text x="290" y="185" fill="rgba(255,255,255,0.55)" font-family="IBM Plex Mono, monospace" font-size="10">HANDLE</text>
-        <text x="50" y="220" fill="rgba(255,255,255,0.35)" font-family="IBM Plex Mono, monospace" font-size="10">FIG. 01 — LINEAR CUTTER STAPLER, DISPOSABLE</text>
-      </svg>
-      <span class="diagram-caption">REF. AV-LCS-45 &middot; SINGLE USE</span>
+    <!-- Right: device showcase -->
+    <div class="hero-visual reveal">
+      <div class="hero-device-frame">
+        <img src="assets/images/products/linear-cutter.png" alt="AVIORA Open Linear Cutter Stapler" class="hero-device-img" loading="eager">
+        <div class="hero-device-badge">
+          <span class="hero-badge-dot"></span>
+          <span class="hero-badge-text">OPEN LINEAR CUTTER &middot; ISO 13485 CERTIFIED</span>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- SPEC STRIP -->
-  <div class="spec-strip">
-    <div class="wrap">
-      <div class="spec-strip-inner">
-        <div class="spec-item"><div class="spec-value" data-count="11" data-suffix="+">0</div><div class="spec-label">Instrument families in the active portfolio</div></div>
-        <div class="spec-item"><div class="spec-value" data-count="24" data-suffix="hr">0</div><div class="spec-label">Standard order dispatch window</div></div>
-        <div class="spec-item"><div class="spec-value" data-count="500" data-suffix="+">0</div><div class="spec-label">Hospitals and surgical centres supplied</div></div>
-        <div class="spec-item"><div class="spec-value" data-count="100" data-suffix="%">0</div><div class="spec-label">Lot-traceable, gamma-sterilised output</div></div>
+  <!-- Trust indicators -->
+  <div class="trust-strip">
+    <div class="trust-row">
+      <div class="trust-item">
+        <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="#A78BFA" stroke-width="1.8"/></svg></div>
+        <span class="trust-label">CE Certified Products</span>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="#A78BFA" stroke-width="1.8"/></svg></div>
+        <span class="trust-label">FDA Cleared Products*</span>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke="#A78BFA" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <span class="trust-label">ISO 13485 Manufacturing Partners</span>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z" stroke="#A78BFA" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <span class="trust-label">CDSCO Compliant Imports</span>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 21v-7a8 8 0 0 1 16 0v7M4 16h4v5H4zM16 16h4v5h-4z" stroke="#A78BFA" stroke-width="1.8"/></svg></div>
+        <span class="trust-label">Technical Support</span>
       </div>
     </div>
+    <p style="text-align:center;padding:8px 24px;font-size:11px;font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,0.3);">*Where applicable, dependent on manufacturing partner and product line.</p>
   </div>
 </section>
 
 <!-- COMPANY INTRO -->
-<section class="section">
-  <div class="wrap grid grid-2" style="align-items:center;gap:56px;">
+<section class="section section-alt">
+  <div class="wrap" style="display:grid;gap:64px;align-items:center;" class="grid">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
     <div class="reveal">
       <span class="eyebrow">Who we are</span>
-      <h2 class="section-title">A focused surgical device supplier — precision products, global standards, local support.</h2>
-      <p class="muted" style="margin-top:20px;font-size:16px;">AVIORA MedTech is a trusted importer and distributor of advanced surgical devices, partnering with globally recognised ISO 13485 certified manufacturers to deliver high-quality laparoscopic trocars, surgical staplers and hemostasis solutions to hospitals and healthcare professionals across India.</p>
+      <h2 style="margin-top:14px;">A focused surgical device supplier — precision products, global standards, local support.</h2>
+      <p style="margin-top:18px;color:var(--mid);font-size:16px;">AVIORA MedTech is a trusted importer and distributor of advanced surgical devices, partnering with globally recognised ISO 13485 certified manufacturers to deliver high-quality laparoscopic trocars, surgical staplers and hemostasis solutions to hospitals and healthcare professionals across India.</p>
       <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="about.html" class="btn btn-outline">More About Us</a>
+        <a href="about.html" class="btn btn-primary">About Us</a>
+        <a href="manufacturing.html" class="btn btn-outline">Our Partners</a>
       </div>
     </div>
-    <div class="reveal" style="border:1px solid var(--line-strong);border-radius:6px;overflow:hidden;">
-      <div class="spec-strip-inner" style="grid-template-columns:1fr;">
-        <div class="spec-item" style="border-right:none;">
-          <div class="eyebrow" style="color:var(--secondary);">Vision</div>
-          <p style="margin-top:10px;font-size:15px;">To be the endo surgery brand Indian and emerging-market hospitals reach for first — reliable, in stock, fairly priced.</p>
-        </div>
-        <div class="spec-item" style="border-right:none;">
-          <div class="eyebrow" style="color:var(--secondary);">Mission</div>
-          <p style="margin-top:10px;font-size:15px;">Source, supply and support advanced surgical devices that meet global regulatory benchmarks, backed by responsive local technical service.</p>
-        </div>
+    <div style="display:grid;gap:1px;background:var(--line);border-radius:8px;overflow:hidden;" class="reveal reveal-delay-1">
+      <div style="background:var(--white);padding:24px;border-bottom:1px solid var(--line);">
+        <span class="eyebrow" style="color:var(--secondary);">Vision</span>
+        <p style="margin-top:10px;font-size:15px;">To be the surgical device brand Indian hospitals reach for first — reliable, in stock, fairly priced.</p>
       </div>
+      <div style="background:var(--white);padding:24px;">
+        <span class="eyebrow" style="color:var(--secondary);">Mission</span>
+        <p style="margin-top:10px;font-size:15px;">Source, supply and support advanced surgical devices meeting global regulatory benchmarks, backed by responsive local technical service.</p>
+      </div>
+    </div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCT PORTFOLIO -->
-<section class="section section-alt" id="portfolio">
+<!-- PRODUCT CATEGORIES -->
+<section class="section" id="products">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Product portfolio</span>
-      <h2 class="section-title">Three systems. One standard of finish.</h2>
+      <h2 style="margin-top:14px;">Surgical devices, grouped the way your theatres work.</h2>
     </div>
-    <div class="grid grid-3">
-      <div class="card reveal" style="padding:32px;">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12h9m0 0 4-4m-4 4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="15" y="8" width="6" height="8" rx="1.4" stroke="currentColor" stroke-width="1.6"/></svg></div>
-        <h3 style="margin-top:20px;font-size:19px;">Surgical Stapling</h3>
-        <p class="muted" style="margin-top:10px;font-size:14.5px;">Linear cutter staplers, reload cartridges, circular and skin staplers, PPH staplers.</p>
-        <a href="products.html#stapling" class="product-card-link" style="margin-top:18px;">View category
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+
+    <!-- Priority products -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;">
+
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <img src="assets/images/products/trocar.png" alt="Disposable Laparoscopic Trocar" loading="lazy">
+        </div>
+        <div class="product-card-body">
+          <span class="product-card-tag">AV-TRO-SERIES &middot; Laparoscopic</span>
+          <div class="product-card-name">Disposable Laparoscopic Trocars</div>
+          <div class="product-card-desc">Bladeless and bladed options. Fresh factory-sharp entry every case. 5mm / 10mm / 12mm / 15mm.</div>
+          <a href="product-disposable-trocars.html" class="product-card-link">View product <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
       </div>
-      <div class="card reveal" style="padding:32px;">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3 style="margin-top:20px;font-size:19px;">Laparoscopic Access</h3>
-        <p class="muted" style="margin-top:10px;font-size:14.5px;">Disposable trocars, Veress needles and access accessories for controlled entry.</p>
-        <a href="products.html#access" class="product-card-link" style="margin-top:18px;">View category
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+
+      <div class="product-card reveal reveal-delay-1">
+        <div class="product-card-img">
+          <img src="assets/images/products/endo-linear-cutter.png" alt="Endoscopic Linear Cutter" loading="lazy">
+        </div>
+        <div class="product-card-body">
+          <span class="product-card-tag">AV-ELC-SERIES &middot; Laparoscopic</span>
+          <div class="product-card-name">Endoscopic Linear Cutter &amp; Reload</div>
+          <div class="product-card-desc">Single-use and reusable. 30mm / 45mm / 60mm cartridges. Articulating and straight reload options.</div>
+          <a href="product-linear-cutter-stapler.html" class="product-card-link">View product <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
       </div>
-      <div class="card reveal" style="padding:32px;">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 12c0-4 2.5-7 6-7s6 3 6 7-2.5 7-6 7-6-3-6-7Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 9v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
-        <h3 style="margin-top:20px;font-size:19px;">Hemostasis</h3>
-        <p class="muted" style="margin-top:10px;font-size:14.5px;">Polymer ligating clips, clip appliers and titanium clips for secure vessel control.</p>
-        <a href="products.html#hemostasis" class="product-card-link" style="margin-top:18px;">View category
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+
+      <div class="product-card reveal reveal-delay-2">
+        <div class="product-card-img">
+          <img src="assets/images/products/linear-cutter2.png" alt="Open Linear Cutter Stapler" loading="lazy">
+        </div>
+        <div class="product-card-body">
+          <span class="product-card-tag">AV-LCS-SERIES &middot; Open Surgery</span>
+          <div class="product-card-name">Open Linear Cutter Stapler</div>
+          <div class="product-card-desc">Triple-staggered titanium staple rows. 45mm / 60mm / 80mm staple line lengths. Colour-coded reloads.</div>
+          <a href="product-linear-cutter-stapler.html" class="product-card-link">View product <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
       </div>
+
+      <div class="product-card reveal reveal-delay-3">
+        <div class="product-card-img">
+          <img src="assets/images/products/pph-stapler.png" alt="PPH Stapler" loading="lazy">
+        </div>
+        <div class="product-card-body">
+          <span class="product-card-tag">AV-PPH-33 &middot; Open Surgery</span>
+          <div class="product-card-name">PPH Stapler</div>
+          <div class="product-card-desc">Circular staple line for hemorrhoidopexy. 33mm diameter. Reduced post-op pain vs excisional technique.</div>
+          <a href="product-pph-stapler.html" class="product-card-link">View product <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:32px;text-align:center;">
+      <a href="products.html" class="btn btn-outline btn-lg">View All Products</a>
     </div>
   </div>
 </section>
 
 <!-- WHY AVIORA -->
-<section class="section">
+<section class="section section-alt">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Why Aviora</span>
-      <h2 class="section-title">Built around the constraints of a real operating list.</h2>
+    <div class="section-head reveal center">
+      <span class="eyebrow">Why AVIORA</span>
+      <h2 style="margin-top:14px;">Built around the constraints of a real operating list.</h2>
     </div>
-    <div class="grid grid-4">
-      <div class="reveal">
-        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg></div>
-        <h3 style="margin-top:16px;font-size:16.5px;">Consistent firing force</h3>
-        <p class="muted" style="margin-top:8px;font-size:14px;">Every cartridge lot is tested against the same closure and staple-height tolerances before release.</p>
+    <div class="grid g4">
+      <div class="card reveal" style="padding:28px;">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3 style="margin-top:16px;font-size:16px;">Verified device quality</h3>
+        <p style="margin-top:8px;font-size:14px;color:var(--mid);">Every batch is checked against manufacturing-partner specifications before release to our warehouse.</p>
       </div>
-      <div class="reveal">
-        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3 8 4-16 3 8h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3 style="margin-top:16px;font-size:16.5px;">Traceable, sterile stock</h3>
-        <p class="muted" style="margin-top:8px;font-size:14px;">Lot and sterilisation-cycle data are logged for every unit shipped, end to end.</p>
+      <div class="card reveal reveal-delay-1" style="padding:28px;">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3 8 4-16 3 8h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 style="margin-top:16px;font-size:16px;">Full lot traceability</h3>
+        <p style="margin-top:8px;font-size:14px;color:var(--mid);">Lot and sterilisation-cycle data logged for every unit shipped, from manufacturer to theatre.</p>
       </div>
-      <div class="reveal">
-        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg></div>
-        <h3 style="margin-top:16px;font-size:16.5px;">24-hour dispatch</h3>
-        <p class="muted" style="margin-top:8px;font-size:14px;">Standard SKUs ship within a day so a cancelled list is never down to a missing cartridge.</p>
+      <div class="card reveal reveal-delay-2" style="padding:28px;">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3 style="margin-top:16px;font-size:16px;">24-hour dispatch</h3>
+        <p style="margin-top:8px;font-size:14px;color:var(--mid);">Standard SKUs ship within one working day so a cancelled list is never down to a missing cartridge.</p>
       </div>
-      <div class="reveal">
-        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 21v-7a8 8 0 0 1 16 0v7" stroke="currentColor" stroke-width="1.7"/><path d="M4 16h4v5H4zM16 16h4v5h-4z" stroke="currentColor" stroke-width="1.7"/></svg></div>
-        <h3 style="margin-top:16px;font-size:16.5px;">Field &amp; clinical support</h3>
-        <p class="muted" style="margin-top:8px;font-size:14px;">Application specialists support first cases and train theatre staff on new instrument lines.</p>
+      <div class="card reveal reveal-delay-3" style="padding:28px;">
+        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 21v-7a8 8 0 0 1 16 0v7M4 16h4v5H4zM16 16h4v5h-4z" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3 style="margin-top:16px;font-size:16px;">Field &amp; clinical support</h3>
+        <p style="margin-top:8px;font-size:14px;color:var(--mid);">Application specialists support first cases and train theatre staff on new instrument lines.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- QUALITY COMMITMENT -->
+<!-- QUALITY DARK SECTION -->
 <section class="section section-dark">
-  <div class="wrap grid grid-2" style="align-items:center;gap:56px;">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
     <div class="reveal">
       <span class="eyebrow">Quality commitment</span>
-      <h2 class="section-title">Quality isn't a department. It's the production line.</h2>
-      <p style="margin-top:20px;color:rgba(255,255,255,0.7);font-size:16px;">From incoming raw-material inspection to final release, every Aviora device moves through documented checkpoints aligned to ISO 13485:2016 and CDSCO requirements.</p>
-      <a href="quality.html" class="btn btn-ghost-white" style="margin-top:28px;">See Our Quality System</a>
+      <h2 style="margin-top:14px;">Quality isn't a department. It's every shipment.</h2>
+      <p style="margin-top:18px;color:rgba(255,255,255,0.65);font-size:16px;">From manufacturing-partner qualification to final dispatch, every AVIORA shipment moves through documented checkpoints aligned to ISO 13485:2016 and CDSCO import requirements.</p>
+      <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="quality.html" class="btn btn-gradient">Quality System</a>
+        <a href="manufacturing.html" class="btn btn-ghost-white">Manufacturing</a>
+      </div>
     </div>
-    <div class="grid" style="gap:1px;background:rgba(255,255,255,0.1);border-radius:6px;overflow:hidden;">
-      <div style="background:var(--dark);padding:20px 24px;display:flex;justify-content:space-between;"><span>Supplier Qualification</span><span style="color:var(--accent);font-family:var(--font-data);">PASS</span></div>
-      <div style="background:var(--dark);padding:20px 24px;display:flex;justify-content:space-between;"><span>Incoming Inspection</span><span style="color:var(--accent);font-family:var(--font-data);">PASS</span></div>
-      <div style="background:var(--dark);padding:20px 24px;display:flex;justify-content:space-between;"><span>In-Process QA</span><span style="color:var(--accent);font-family:var(--font-data);">PASS</span></div>
-      <div style="background:var(--dark);padding:20px 24px;display:flex;justify-content:space-between;"><span>Final Release &amp; Sterility</span><span style="color:var(--accent);font-family:var(--font-data);">PASS</span></div>
+    <div class="reveal reveal-delay-1">
+      <div style="display:grid;gap:1px;background:rgba(255,255,255,0.08);border-radius:8px;overflow:hidden;">
+        <div style="background:rgba(255,255,255,0.04);padding:18px 24px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:14.5px;">Manufacturing Partner Qualification</span><span style="color:var(--green);font-family:'IBM Plex Mono',monospace;font-size:12px;">PASS</span></div>
+        <div style="background:rgba(255,255,255,0.04);padding:18px 24px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:14.5px;">Incoming Inspection</span><span style="color:var(--green);font-family:'IBM Plex Mono',monospace;font-size:12px;">PASS</span></div>
+        <div style="background:rgba(255,255,255,0.04);padding:18px 24px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:14.5px;">CE &amp; ISO Documentation</span><span style="color:var(--green);font-family:'IBM Plex Mono',monospace;font-size:12px;">PASS</span></div>
+        <div style="background:rgba(255,255,255,0.04);padding:18px 24px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:14.5px;">CDSCO Import Compliance</span><span style="color:var(--green);font-family:'IBM Plex Mono',monospace;font-size:12px;">PASS</span></div>
+        <div style="background:rgba(255,255,255,0.04);padding:18px 24px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:14.5px;">Final Release &amp; Dispatch</span><span style="color:var(--green);font-family:'IBM Plex Mono',monospace;font-size:12px;">PASS</span></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- DISTRIBUTOR CTA -->
 <section class="section section-alt">
-  <div class="wrap grid grid-2" style="align-items:center;gap:40px;">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
     <div class="reveal">
       <span class="eyebrow">Partnership</span>
-      <h2 class="section-title">Become an Aviora distributor.</h2>
-      <p class="muted" style="margin-top:16px;font-size:16px;">Territory support, marketing collateral and clinical training for partners who want a dependable endo surgery line to represent.</p>
+      <h2 style="margin-top:14px;">Become an AVIORA distributor.</h2>
+      <p style="margin-top:16px;color:var(--mid);font-size:16px;">Territory support, marketing collateral and clinical training for partners who want a dependable advanced surgical device line to represent.</p>
     </div>
-    <div class="reveal" style="display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-start;">
-      <a href="distributors.html" class="btn btn-primary">Distributor Program</a>
-      <a href="contact.html" class="btn btn-outline">Request Callback</a>
+    <div class="reveal" style="display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="distributors.html" class="btn btn-primary btn-lg">Distributor Program</a>
+      <a href="contact.html" class="btn btn-outline btn-lg">Request Callback</a>
     </div>
   </div>
 </section>
 
 <!-- CONTACT CTA -->
 <section class="section">
-  <div class="wrap" style="background:var(--dark);border-radius:10px;padding:64px 40px;text-align:center;position:relative;overflow:hidden;">
-    <div class="hero-grid" aria-hidden="true" style="mask-image:radial-gradient(ellipse at 50% 0%, black, transparent 75%);"></div>
-    <div style="position:relative;">
-      <h2 style="color:#fff;font-size:clamp(24px,3vw,34px);max-width:560px;margin:0 auto;">Have a product question or a bulk requirement? Our team replies within one business day.</h2>
-      <div style="margin-top:28px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="contact.html" class="btn btn-accent">Contact Us</a>
-        <a href="tel:+911234567890" class="btn btn-ghost-white">Call +91 12345 67890</a>
+  <div class="wrap">
+    <div style="background:var(--dark);border-radius:12px;padding:72px 48px;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(99,102,241,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,0.07) 1px,transparent 1px);background-size:64px 64px;" aria-hidden="true"></div>
+      <div style="position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(circle,rgba(124,58,237,0.2) 0%,transparent 70%);" aria-hidden="true"></div>
+      <div style="position:relative;">
+        <h2 style="color:#fff;max-width:560px;margin:0 auto;">Have a product question or a bulk requirement?</h2>
+        <p style="margin-top:14px;color:rgba(255,255,255,0.6);font-size:16px;max-width:460px;margin-left:auto;margin-right:auto;">Our team responds within 24 business hours.</p>
+        <div style="margin-top:32px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-gradient btn-lg">Contact Us</a>
+          <a href="tel:+911234567890" class="btn btn-ghost-white btn-lg">Call +91 12345 67890</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 </main>
-  <footer class="site-footer">
-    <div class="wrap footer-top">
+
+<footer class="site-footer" role="contentinfo">
+  <div class="wrap">
+    <div class="footer-top">
       <div>
-        <div class="logo" style="color:#fff;margin-bottom:16px;">
-          <img src="assets/images/logo-transparent.png" alt="Aviora Medtech" class="logo-img logo-img-footer">
+        <div class="footer-logo">
+          <img src="assets/images/logo-transparent.png" alt="AVIORA MedTech" class="footer-logo-img">
         </div>
-        <p style="max-width:32ch;font-size:14.5px;color:rgba(255,255,255,0.6);">
-          Indian-made endo surgery instrumentation — stapling, laparoscopic access and hemostasis systems — built to a single tolerance: theatre-ready, every time.
-        </p>
-        <div class="social-row" style="margin-top:22px;">
-          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg></a>
-          <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></a>
-          <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"/></svg></a>
+        <p class="footer-tagline">Advanced surgical devices — sourced from globally recognised ISO 13485 certified manufacturing partners, supplied across India.</p>
+        <div class="social-row" style="margin-top:20px;">
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg></a>
+          <a href="#" class="social-link" aria-label="YouTube"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></a>
+          <a href="https://wa.me/911234567890" class="social-link" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"/></svg></a>
         </div>
       </div>
-
-      <div>
-        <h4>Navigate</h4>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="products.html#laparoscopic">Laparoscopic Surgery</a>
+        <a href="products.html#open">Open Surgery</a>
+        <a href="products.html#accessories">Accessories</a>
+        <a href="products.html#energy">Energy Devices</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
         <a href="about.html">About Us</a>
-        <a href="products.html">Products</a>
-        <a href="quality.html">Quality</a>
+        <a href="quality.html">Quality &amp; Compliance</a>
+        <a href="manufacturing.html">Manufacturing</a>
         <a href="distributors.html">Distributors</a>
         <a href="contact.html">Contact</a>
       </div>
-
-      <div>
-        <h4>Product Lines</h4>
-        <a href="products.html#stapling">Surgical Stapling</a>
-        <a href="products.html#access">Laparoscopic Access</a>
-        <a href="products.html#hemostasis">Hemostasis</a>
-        <a href="quality.html">Regulatory &amp; Compliance</a>
-      </div>
-
-      <div>
-        <h4>Reach us</h4>
+      <div class="footer-col">
+        <h4>Contact</h4>
         <a href="mailto:info@avioramedtech.com">info@avioramedtech.com</a>
         <a href="tel:+911234567890">+91 12345 67890</a>
-        <a href="contact.html">Plot 14, MediTech Industrial Park,<br>Vadodara, Gujarat, India</a>
+        <a href="https://wa.me/911234567890">WhatsApp Chat</a>
+        <a href="contact.html" style="font-size:12px;margin-top:6px;color:rgba(255,255,255,0.35);">Plot 14, MediTech Industrial Park, Vadodara, Gujarat, India 390001</a>
       </div>
     </div>
-
-    <div class="wrap footer-bottom">
-      <span>&copy; 2026 Aviora Medtech Pvt. Ltd. All rights reserved.</span>
-      <span>CDSCO Registered Importer &nbsp;&middot;&nbsp; Manufacturing Partners ISO 13485:2016 Certified</span>
+  </div>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>&copy; 2026 AVIORA MedTech Pvt. Ltd. All rights reserved.</span>
+      <span>CDSCO Registered Importer &nbsp;&middot;&nbsp; ISO 13485 Manufacturing Partners</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms of Use</a></span>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <a href="https://wa.me/911234567890" class="wa-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"/></svg>
-  </a>
+<!-- WhatsApp float -->
+<a href="https://wa.me/911234567890" class="wa-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"/></svg>
+</a>
 
-  <script src="assets/js/main.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Aviora Medtech",
-  "url": "https://www.avioramedtech.com/",
-  "description": "Importer and distributor of advanced surgical devices in India — laparoscopic trocars, surgical staplers and hemostasis solutions from globally recognised manufacturing partners.",
-  
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Plot 14, MediTech Industrial Park",
-    "addressLocality": "Vadodara",
-    "addressRegion": "Gujarat",
-    "addressCountry": "IN"
-  },
-  "telephone": "+91-12345-67890",
-  "email": "info@avioramedtech.com"
-}
+<!-- Sticky mobile CTA -->
+<a href="contact.html" class="sticky-cta" aria-label="Request a quote">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 8l9-4 9 4v8l-9 4-9-4V8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+  Request a Quote
+</a>
+
+<script>
+  // Show header CTA after scroll
+  var hdrQ = document.getElementById('hdrQuote');
+  if (hdrQ) window.addEventListener('scroll', function() {
+    hdrQ.style.display = window.scrollY > 300 ? '' : 'none';
+  }, {passive:true});
 </script>
+<script src="assets/js/main.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization",
+"name":"AVIORA MedTech","url":"https://www.avioramedtech.com/",
+"description":"Importer and distributor of advanced surgical devices in India — laparoscopic trocars, linear cutter staplers, PPH staplers and surgical consumables from globally recognised ISO 13485 certified manufacturing partners.",
+"address":{"@type":"PostalAddress","streetAddress":"Plot 14, MediTech Industrial Park","addressLocality":"Vadodara","addressRegion":"Gujarat","addressCountry":"IN"},
+"telephone":"+91-12345-67890","email":"info@avioramedtech.com"}</script>
 </body>
 </html>
