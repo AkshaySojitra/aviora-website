@@ -82,26 +82,101 @@
   <div class="wrap hero-inner">
     <!-- Left: text -->
     <div>
-      <div class="hero-eyebrow">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" fill="currentColor"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
-        Advanced Surgical Devices &middot; India
-      </div>
       <h1>Precision Surgical Technologies for <em>Modern Healthcare</em></h1>
       <p class="hero-sub">AVIORA MedTech develops advanced surgical technologies and partners with world-class manufacturing facilities to deliver precision surgical solutions trusted by healthcare professionals across India.</p>
-      <div class="hero-actions">
-        <a href="products.html" class="btn btn-gradient btn-lg">Explore Products</a>
-        <a href="distributors.html" class="btn btn-ghost-white btn-lg">Become a Distributor</a>
-        <a href="contact.html" class="btn btn-ghost-white btn-lg" style="border-color:rgba(255,255,255,0.15);">Contact Us</a>
-      </div>
     </div>
 
-    <!-- Right: device showcase -->
+    <!-- Right: professional SVG illustration -->
     <div class="hero-visual reveal">
-      <div class="hero-device-frame">
-        <img src="assets/images/products/linear-cutter.png" alt="AVIORA Open Linear Cutter Stapler" class="hero-device-img" loading="eager">
+      <div class="hero-device-frame" style="padding:24px 20px 48px;">
+        <svg viewBox="0 0 460 340" width="100%" role="img" aria-label="Medical technology illustration — surgical instruments and precision devices">
+          <defs>
+            <linearGradient id="hg1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4F46E5"/>
+              <stop offset="50%" stop-color="#7C3AED"/>
+              <stop offset="100%" stop-color="#EC4899"/>
+            </linearGradient>
+            <linearGradient id="hg2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#6366F1" stop-opacity="0.7"/>
+            </linearGradient>
+            <linearGradient id="hg3" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#E2E8F0"/>
+              <stop offset="100%" stop-color="#94A3B8"/>
+            </linearGradient>
+            <filter id="glow-f"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+
+          <!-- Background circles -->
+          <circle cx="350" cy="100" r="110" fill="url(#hg1)" opacity="0.07"/>
+          <circle cx="100" cy="240" r="80" fill="#3B82F6" opacity="0.06"/>
+
+          <!-- Trocar — vertical cylinder on left -->
+          <g transform="translate(48 60)">
+            <rect x="28" y="0" width="18" height="160" rx="9" fill="url(#hg3)" opacity="0.9"/>
+            <rect x="30" y="0" width="14" height="6" rx="3" fill="#CBD5E1"/>
+            <ellipse cx="37" cy="160" rx="9" ry="5" fill="#64748B"/>
+            <rect x="20" y="145" width="34" height="22" rx="4" fill="#94A3B8"/>
+            <rect x="20" y="145" width="34" height="8" rx="2" fill="rgba(255,255,255,0.4)"/>
+            <text x="37" y="185" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-family="IBM Plex Mono,monospace" font-size="8" letter-spacing="0.5">TROCAR</text>
+            <circle cx="37" cy="0" r="4" fill="#00C48C" filter="url(#glow-f)"/>
+          </g>
+
+          <!-- Linear cutter — horizontal, centre-right -->
+          <g transform="translate(100 140)">
+            <!-- Jaw / tip -->
+            <path d="M0 20 L120 14 L122 22 L122 28 L120 36 L0 30 Q-8 25 0 20Z" fill="url(#hg3)"/>
+            <path d="M0 20 L120 14 L122 22 L56 24Z" fill="rgba(255,255,255,0.4)"/>
+            <line x1="56" y1="14" x2="56" y2="36" stroke="#64748B" stroke-width="2" opacity="0.5"/>
+            <!-- Barrel -->
+            <rect x="120" y="8" width="190" height="34" rx="17" fill="url(#hg2)"/>
+            <rect x="120" y="8" width="190" height="14" rx="8" fill="rgba(255,255,255,0.3)"/>
+            <!-- Handle -->
+            <path d="M282 8 Q330 8 338 44 Q343 72 316 78 Q290 80 284 54Z" fill="url(#hg2)"/>
+            <path d="M290 20 Q326 22 332 42" stroke="rgba(255,255,255,0.35)" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <!-- Trigger -->
+            <rect x="222" y="40" width="52" height="10" rx="5" fill="rgba(0,20,60,0.4)"/>
+            <!-- Accent dot -->
+            <circle cx="280" cy="25" r="7" fill="#00C48C" filter="url(#glow-f)"/>
+            <circle cx="280" cy="25" r="7" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+            <!-- Drop shadow -->
+            <ellipse cx="195" cy="50" rx="120" ry="8" fill="black" opacity="0.12"/>
+            <text x="195" y="66" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="IBM Plex Mono,monospace" font-size="8" letter-spacing="0.5">LINEAR CUTTER STAPLER</text>
+          </g>
+
+          <!-- Ligating clip applier — angled, bottom left -->
+          <g transform="translate(60 230) rotate(-12)">
+            <rect x="0" y="8" width="130" height="12" rx="6" fill="#475569" opacity="0.8"/>
+            <rect x="0" y="9" width="130" height="5" rx="3" fill="rgba(255,255,255,0.25)"/>
+            <path d="-5 8 L-18 6 L-20 14 L-8 20Z" fill="#64748B"/>
+            <rect x="128" y="4" width="34" height="20" rx="5" fill="#334155"/>
+            <rect x="128" y="4" width="34" height="9" rx="4" fill="rgba(255,255,255,0.15)"/>
+            <text x="65" y="32" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="IBM Plex Mono,monospace" font-size="7" letter-spacing="0.5">CLIP APPLIER</text>
+          </g>
+
+          <!-- Data labels top right -->
+          <g transform="translate(310 28)">
+            <rect x="0" y="0" width="136" height="26" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <circle cx="12" cy="13" r="4" fill="#00C48C"/>
+            <text x="22" y="17" fill="rgba(255,255,255,0.7)" font-family="IBM Plex Mono,monospace" font-size="9" letter-spacing="0.5">ISO 13485 CERTIFIED</text>
+          </g>
+          <g transform="translate(310 62)">
+            <rect x="0" y="0" width="120" height="26" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <circle cx="12" cy="13" r="4" fill="#A78BFA"/>
+            <text x="22" y="17" fill="rgba(255,255,255,0.7)" font-family="IBM Plex Mono,monospace" font-size="9" letter-spacing="0.5">CE DOCUMENTED</text>
+          </g>
+          <g transform="translate(310 96)">
+            <rect x="0" y="0" width="128" height="26" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <circle cx="12" cy="13" r="4" fill="#38BDF8"/>
+            <text x="22" y="17" fill="rgba(255,255,255,0.7)" font-family="IBM Plex Mono,monospace" font-size="9" letter-spacing="0.5">LOT TRACEABLE</text>
+          </g>
+
+          <!-- Bottom ref line -->
+          <text x="230" y="320" text-anchor="middle" fill="rgba(255,255,255,0.28)" font-family="IBM Plex Mono,monospace" font-size="9" letter-spacing="1">AVIORA MEDTECH &middot; ADVANCED SURGICAL DEVICES</text>
+        </svg>
         <div class="hero-device-badge">
           <span class="hero-badge-dot"></span>
-          <span class="hero-badge-text">OPEN LINEAR CUTTER &middot; ISO 13485 CERTIFIED</span>
+          <span class="hero-badge-text">SURGICAL INSTRUMENTS &middot; ISO 13485 CERTIFIED PARTNERS</span>
         </div>
       </div>
     </div>
