@@ -183,27 +183,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   height:82px;
 }
 .logo{
-  font-family:var(--font-head);
-  font-weight:700;
-  font-size:20px;
-  letter-spacing:-0.01em;
   display:flex; align-items:center; gap:10px;
-  color:var(--dark);
 }
-.site-header:not(.is-solid) .logo{ color:var(--white); }
-.logo-mark{
-  width:34px; height:34px; border-radius:6px;
-  background:var(--primary);
-  display:flex; align-items:center; justify-content:center;
-  color:#fff; flex-shrink:0;
-}
-.logo-sub{
-  font-family:var(--font-data);
-  font-size:10px;
-  letter-spacing:0.12em;
-  color:var(--secondary);
+.logo-img{
+  height:38px;
+  width:auto;
   display:block;
-  margin-top:-2px;
+  background:#fff;
+  border-radius:6px;
+  padding:4px 10px;
+}
+.logo-img-footer{
+  height:34px;
+}
+@media (min-width:960px){
+  .logo-img{ height:44px; }
 }
 
 .main-nav{ display:none; align-items:center; gap:36px; }
