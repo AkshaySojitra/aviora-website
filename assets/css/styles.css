@@ -396,3 +396,276 @@ button { font-family: inherit; cursor: pointer; border: none; }
 
 /* Focus */
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--secondary); outline-offset: 3px; border-radius: 4px; }
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE & TABLET — Responsive overrides
+   Breakpoints: tablet ≤ 900px, mobile ≤ 600px, small ≤ 400px
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Responsive 2-column grid utility ───────────────────────── */
+.r2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+@media (max-width: 860px) { .r2 { grid-template-columns: 1fr; gap: 32px; } }
+
+/* ── Section padding ─────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .section       { padding: 56px 0; }
+  .section-tight { padding: 40px 0; }
+  .section-sm    { padding: 32px 0; }
+}
+
+/* ── Typography scale down ───────────────────────────────────── */
+@media (max-width: 600px) {
+  h1 { font-size: clamp(26px, 8vw, 36px); }
+  h2 { font-size: clamp(20px, 6vw, 28px); }
+  h3 { font-size: clamp(16px, 4vw, 20px); }
+  .hero-sub { font-size: 15px; }
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+@media (max-width: 999px) {
+  .nav-row { height: 72px; }
+  .logo-img { height: 38px; }
+  .header-cta .btn { display: none; }
+}
+
+/* ── Hero (image hero) ───────────────────────────────────────── */
+@media (max-width: 600px) {
+  /* Push hero scroll CTA down a bit less on small screens */
+  section[style*="min-height:100vh"] { min-height: 100svh; }
+}
+
+/* ── Hero inner (old text/SVG hero if present) ───────────────── */
+@media (max-width: 959px) {
+  .hero-inner { grid-template-columns: 1fr !important; padding-top: 100px; padding-bottom: 40px; }
+  .hero-visual { display: none; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+}
+
+/* ── Trust row (hero trust strip) ───────────────────────────── */
+@media (max-width: 860px) {
+  .trust-row { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 480px) {
+  .trust-row { grid-template-columns: 1fr !important; }
+  .trust-item { padding: 16px; }
+}
+
+/* ── Stat strip ──────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+  .stat-item { padding: 20px 16px; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.08); }
+}
+
+/* ── Product cards ───────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .product-card-body { padding: 18px; }
+  .product-card-img  { aspect-ratio: 3/2; }
+}
+
+/* ── All inline 2-col grids — collapse on tablet/mobile ─────── */
+@media (max-width: 860px) {
+  /* These selectors target the inline style="display:grid;grid-template-columns:1fr 1fr" pattern */
+  [style*="grid-template-columns:1fr 1fr"],
+  [style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  /* Feature card image panels inside product pages */
+  [style*="grid-template-columns:1fr 1fr"] > div:last-child img {
+    max-height: 180px;
+  }
+}
+
+/* ── Section head centring on mobile ─────────────────────────── */
+@media (max-width: 600px) {
+  .section-head { text-align: left; }
+  .section-head p { max-width: 100% !important; }
+}
+
+/* ── Contact page — map height ───────────────────────────────── */
+@media (max-width: 600px) {
+  iframe { height: 240px !important; }
+}
+
+/* ── Distributor / about page timeline ──────────────────────── */
+@media (max-width: 600px) {
+  .timeline { padding-left: 28px; }
+  .timeline-dot { width: 18px; height: 18px; left: -28px; font-size: 9px; }
+}
+
+/* ── Accordion ───────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .accordion-trigger { font-size: 15px; padding: 16px 0; }
+  .accordion-panel-inner { font-size: 14px; }
+}
+
+/* ── Table overflow on mobile (spec tables) ──────────────────── */
+@media (max-width: 600px) {
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 12.5px; }
+  table th, table td { padding: 8px 10px; white-space: nowrap; }
+}
+
+/* ── Product detail hero ─────────────────────────────────────── */
+@media (max-width: 860px) {
+  /* Hero dark section on product pages: stack image below text */
+  .wrap > div[style*="grid-template-columns:1fr 1fr"]:first-of-type {
+    grid-template-columns: 1fr !important;
+  }
+  /* Thumbnail strip: 4 across → 2 across */
+  #heroImg { height: 240px !important; }
+  button > img[style*="height:72px"] { height: 56px !important; }
+}
+
+/* ── Feature cards (2-col image+text) on product pages ──────── */
+@media (max-width: 860px) {
+  .card > div[style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+  /* Move the feature image below the text on mobile */
+  .card > div[style*="grid-template-columns:1fr 1fr"] > div:last-child {
+    order: -1;
+  }
+}
+
+/* ── Quality page 2-col layout ───────────────────────────────── */
+@media (max-width: 860px) {
+  /* Risk management: stack PMS table below text */
+  .wrap > div[style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+}
+
+/* ── CTA sections ────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  /* "Have a product question" dark banner */
+  .wrap > div[style*="padding:72px 48px"] {
+    padding: 40px 24px !important;
+  }
+  /* Button rows inside CTAs */
+  div[style*="display:flex"][style*="gap:14px"],
+  div[style*="display:flex"][style*="gap:16px"] {
+    flex-direction: column;
+  }
+  div[style*="display:flex"][style*="gap:14px"] > a,
+  div[style*="display:flex"][style*="gap:16px"] > a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* ── Footer ──────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .footer-top { grid-template-columns: 1fr !important; gap: 32px; padding: 48px 0 32px; }
+  .footer-col a { padding: 4px 0; }
+  .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+  .social-row { justify-content: center; }
+}
+
+/* ── Sticky quote + WhatsApp on mobile ───────────────────────── */
+@media (max-width: 768px) {
+  .wa-float { bottom: 80px; right: 16px; width: 46px; height: 46px; }
+  .sticky-cta { font-size: 14px; padding: 13px 20px; }
+}
+
+/* ── Mobile menu ─────────────────────────────────────────────── */
+@media (max-width: 999px) {
+  .mobile-menu a { font-size: 18px; padding: 14px 0; }
+}
+
+/* ── Wrap padding on small screens ──────────────────────────── */
+@media (max-width: 400px) {
+  .wrap { padding: 0 16px; }
+  .btn-lg { padding: 13px 22px; font-size: 15px; }
+}
+
+/* ── Product portfolio expansion note ───────────────────────── */
+@media (max-width: 600px) {
+  div[style*="display:flex;align-items:flex-start;gap:20px"],
+  div[style*="display:flex;align-items:flex-start;gap:18px"] {
+    flex-direction: column;
+    gap: 16px !important;
+  }
+}
+
+/* ── Hero image section specific ────────────────────────────── */
+@media (max-width: 600px) {
+  section > img[src*="hero-bg"] {
+    object-position: 65% center;
+  }
+}
+
+/* ── Sitemap page grid ───────────────────────────────────────── */
+@media (max-width: 600px) {
+  div[style*="grid-template-columns:repeat(auto-fit"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Vision/Mission cards ────────────────────────────────────── */
+@media (max-width: 600px) {
+  .card[style*="padding:36px"], .card[style*="padding:40px"] { padding: 24px !important; }
+  .card[style*="padding:28px"], .card[style*="padding:26px"] { padding: 20px !important; }
+}
+
+/* ── Quality spec strip (4 col) ─────────────────────────────── */
+@media (max-width: 600px) {
+  .spec-strip-inner,
+  div[style*="grid-template-columns:repeat(4,1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  div[style*="grid-template-columns:repeat(4,1fr)"] > div {
+    border-right: none !important;
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+
+/* ── Section top padding responsive ────────────────────────── */
+@media (max-width: 860px) {
+  section[style*="padding-top:156px"] { padding-top: 110px !important; }
+  section[style*="padding-top:150px"] { padding-top: 110px !important; }
+  .r2 { gap: 28px !important; }
+}
+@media (max-width: 600px) {
+  section[style*="padding-top:156px"] { padding-top: 96px !important; }
+  section[style*="padding-top:150px"] { padding-top: 96px !important; }
+  .r2 { gap: 24px !important; }
+}
+
+/* ── About stats 4-col ──────────────────────────────────────── */
+.stats-row-4 { display: grid; grid-template-columns: repeat(4,1fr); }
+@media (max-width: 700px) { .stats-row-4 { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 400px) { .stats-row-4 { grid-template-columns: 1fr; } }
+.stats-row-4 > div { padding: 28px 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+@media (max-width: 700px) {
+  .stats-row-4 > div:nth-child(2n) { border-right: none; }
+}
+@media (max-width: 400px) {
+  .stats-row-4 > div { border-right: none; }
+}
+
+/* ── Product detail thumbnail buttons ───────────────────────── */
+@media (max-width: 600px) {
+  #heroImg { height: 200px !important; }
+}
+
+/* ── Portfolio note (flex → column on mobile) ───────────────── */
+@media (max-width: 600px) {
+  .portfolio-note { flex-direction: column !important; gap: 16px !important; }
+}
+
+/* ── Quality 10-checkpoint grid ─────────────────────────────── */
+@media (max-width: 600px) {
+  .grid.g2 { grid-template-columns: 1fr !important; }
+}
+
+/* ── Certification cards (3-col dark section) ───────────────── */
+@media (max-width: 700px) {
+  .grid.g3 { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 480px) {
+  .grid.g3 { grid-template-columns: 1fr !important; }
+}
