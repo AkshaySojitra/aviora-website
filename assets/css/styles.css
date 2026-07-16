@@ -669,3 +669,66 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 480px) {
   .grid.g3 { grid-template-columns: 1fr !important; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE FIX v2 — based on screenshot audit Jul 16
+   Issues: logo overlapping hero text, hero text too large,
+   trust strip 1-col, header not solid on mobile
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Always show solid header on mobile (no transparent) ────── */
+@media (max-width: 959px) {
+  .site-header {
+    background: rgba(248,250,252,0.97) !important;
+    backdrop-filter: blur(12px) !important;
+    border-bottom-color: var(--line) !important;
+  }
+  .site-header .main-nav a { color: var(--dark) !important; }
+  .site-header .mobile-toggle { border-color: var(--line-mid) !important; color: var(--dark) !important; }
+  .logo-img { height: 36px !important; }
+}
+
+/* ── Hero inner: enough top padding to clear fixed header ────── */
+@media (max-width: 959px) {
+  .hero-inner {
+    padding-top: 96px !important;
+    padding-bottom: 36px !important;
+    gap: 32px !important;
+  }
+}
+@media (max-width: 600px) {
+  .hero-inner {
+    padding-top: 88px !important;
+  }
+  .hero h1 {
+    font-size: clamp(24px, 7.5vw, 34px) !important;
+    line-height: 1.15 !important;
+  }
+  .hero-sub {
+    font-size: 14.5px !important;
+    margin-top: 14px !important;
+    line-height: 1.65 !important;
+  }
+}
+
+/* ── Trust row: 2 columns on mobile, never 1 column ─────────── */
+@media (max-width: 860px) {
+  .trust-row { grid-template-columns: repeat(2,1fr) !important; }
+}
+@media (max-width: 400px) {
+  .trust-row { grid-template-columns: repeat(2,1fr) !important; }
+  .trust-item { padding: 14px 12px !important; gap: 8px !important; }
+  .trust-icon { width: 32px !important; height: 32px !important; flex-shrink: 0; }
+  .trust-label { font-size: 11.5px !important; }
+}
+
+/* ── Hero: remove min-height:100vh on mobile to avoid scroll ── */
+@media (max-width: 600px) {
+  .hero { min-height: unset !important; }
+}
+
+/* ── Nav row height on mobile ────────────────────────────────── */
+@media (max-width: 600px) {
+  .nav-row { height: 64px !important; }
+}
+
