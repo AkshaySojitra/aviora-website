@@ -26,6 +26,127 @@
 <link rel="preload" as="style" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 
+<style>
+/* Critical product page styles — embedded for reliability */
+:root {
+  --primary:    #005BAC;
+  --primary-dk: #004A8C;
+  --secondary:  #008ED8;
+  --accent:     #7C3AED; /* purple from AVIORA gradient */
+  --accent2:    #EC4899; /* pink from AVIORA gradient */
+  --green:      #00C48C;
+  --dark:       #0F172A;
+  --dark2:      #1E293B;
+  --mid:        #475569;
+  --muted:      #94A3B8;
+  --line:       rgba(15,23,42,0.09);
+  --line-mid:   rgba(15,23,42,0.14);
+  --bg:         #F8FAFC;
+  --white:      #FFFFFF;
+  --container:  1260px;
+  --radius:     8px;
+  --shadow-sm:  0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.05);
+  --shadow-md:  0 4px 24px -6px rgba(15,23,42,0.18);
+  --shadow-lg:  0 20px 48px -16px rgba(15,23,42,0.28);
+  --grad-a:     linear-gradient(135deg, #4F46E5, #7C3AED, #EC4899);
+  --grad-blue:  linear-gradient(135deg, #005BAC, #008ED8);
+  --transition: 0.22s cubic-bezier(0.4,0,0.2,1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', system-ui, sans-serif; color: var(--dark); background: var(--bg); }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+.section { padding: 80px 0; }
+.section-sm { padding: 48px 0; }
+.section-alt { background: var(--white); }
+.section-dark { background: var(--dark); color: #fff; }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+  font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--secondary);
+}
+.eyebrow::before {
+  content: ''; display: block; width: 20px; height: 2px;
+  background: var(--secondary); flex-shrink: 0;
+}
+
+h1 { font-family: 'Poppins', sans-serif; font-size: clamp(28px,4vw,44px); font-weight: 700; line-height: 1.12; color: var(--dark); }
+h2 { font-family: 'Poppins', sans-serif; font-size: clamp(22px,3vw,34px); font-weight: 700; line-height: 1.2; color: var(--dark); }
+h3 { font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 600; color: var(--dark); }
+p  { color: var(--mid); line-height: 1.7; }
+
+.product-card {
+  display: flex; flex-direction: column;
+  background: var(--white); border: 1px solid var(--line);
+  border-radius: 10px; overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-color: rgba(0,142,216,0.35); }
+.product-card-img {
+  aspect-ratio: 4/3; overflow: hidden;
+  background: linear-gradient(145deg,#EEF2FF,#F1F5F9);
+  display: flex; align-items: center; justify-content: center;
+}
+.product-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+.product-card:hover .product-card-img img { transform: scale(1.04); }
+.product-card-body { padding: 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.product-card-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--secondary); }
+.product-card-name { font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 600; color: var(--dark); line-height: 1.25; }
+.product-card-desc { font-size: 13.5px; color: var(--mid); line-height: 1.6; }
+.product-card-link {
+  margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 13.5px; font-weight: 600; color: var(--primary);
+}
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600;
+  cursor: pointer; transition: all 0.2s; border: none; text-decoration: none;
+}
+.btn-gradient {
+  background: linear-gradient(135deg,#4F46E5,#7C3AED,#EC4899);
+  color: #fff; box-shadow: 0 4px 14px rgba(124,58,237,0.35);
+}
+.btn-ghost-white {
+  background: transparent; color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.35);
+}
+.btn-outline {
+  background: transparent; color: var(--primary);
+  border: 1.5px solid var(--primary);
+}
+.btn-sm { padding: 8px 18px; font-size: 13px; }
+.btn-lg { padding: 14px 28px; font-size: 15px; }
+
+.portfolio-note {
+  margin-top: 56px; padding: 30px 34px;
+  background: linear-gradient(135deg,rgba(0,91,172,0.05),rgba(124,58,237,0.05));
+  border: 1px solid rgba(0,91,172,0.12); border-radius: 8px;
+  display: flex; align-items: flex-start; gap: 20px;
+}
+
+@media (max-width: 860px) {
+  .wrap { padding: 0 20px; }
+  [style*="grid-template-columns:repeat(auto-fill"] {
+    grid-template-columns: repeat(2,1fr) !important;
+    gap: 16px !important;
+  }
+}
+@media (max-width: 540px) {
+  [style*="grid-template-columns:repeat(auto-fill"] {
+    grid-template-columns: 1fr !important;
+  }
+  .portfolio-note { flex-direction: column; }
+  h1 { font-size: 26px; }
+  section[style*="padding-top:156px"] { padding-top: 96px !important; }
+}
+</style>
 </head>
 <body>
 <a href="#main-content" class="sr-only" style="position:absolute;left:-9999px;top:4px;padding:8px 16px;background:var(--primary);color:#fff;border-radius:4px;font-weight:600;z-index:9999;">Skip to main content</a>
@@ -223,47 +344,42 @@
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;">
       <div class="product-card reveal">
-        <div class="product-card-img"><img src="assets/images/products/trocar.png" alt="Single Use Bladeless Trocars" loading="lazy"></div>
-        <div class="product-card-body">
+        <div class="product-card-img" style="aspect-ratio:3/4;"><img src="assets/images/products/trocar.png" alt="Single Use Bladeless Trocars" loading="lazy"></div>
+        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
           <span class="product-card-tag">AV-TRO-SERIES</span>
           <div class="product-card-name">Single Use Bladeless Trocars</div>
-          <div class="product-card-desc">Patented bladeless olecranon design. Available in 5mm, 10mm, 12mm and 15mm.</div>
           <a href="product-disposable-trocars.html" class="product-card-link">View product <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
       <div class="product-card reveal reveal-delay-1">
-        <div class="product-card-img"><img src="assets/images/products/linear-cutter2.png" alt="Single Use Linear Cutters" loading="lazy"></div>
-        <div class="product-card-body">
+        <div class="product-card-img" style="aspect-ratio:3/4;"><img src="assets/images/products/linear-cutter2.png" alt="Single Use Linear Cutters" loading="lazy"></div>
+        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
           <span class="product-card-tag">AV-LCS-SERIES</span>
           <div class="product-card-name">Single Use Linear Cutters</div>
-          <div class="product-card-desc">Triple-staggered titanium staple rows. 45mm, 60mm and 80mm lengths. Colour-coded reload cartridges included.</div>
           <a href="product-linear-cutter-stapler.html" class="product-card-link">View product <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
       <div class="product-card reveal reveal-delay-2">
-        <div class="product-card-img"><img src="assets/images/products/pph-stapler.png" alt="Single Use Hemorrhoidal Stapler" loading="lazy"></div>
-        <div class="product-card-body">
+        <div class="product-card-img" style="aspect-ratio:3/4;"><img src="assets/images/products/pph-stapler.png" alt="Single Use Hemorrhoidal Stapler" loading="lazy"></div>
+        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
           <span class="product-card-tag">AV-PPH-33</span>
           <div class="product-card-name">Single Use Hemorrhoidal Stapler</div>
-          <div class="product-card-desc">Purpose-built for stapled hemorrhoidopexy. 33mm circular staple line.</div>
           <a href="product-pph-stapler.html" class="product-card-link">View product <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
       <div class="product-card reveal reveal-delay-3">
-        <div class="product-card-img"><img src="assets/images/products/ligation-clips.png" alt="Single Use Ligation Clips" loading="lazy"></div>
-        <div class="product-card-body">
+        <div class="product-card-img" style="aspect-ratio:3/4;"><img src="assets/images/products/ligation-clips.png" alt="Single Use Ligation Clips" loading="lazy"></div>
+        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
           <span class="product-card-tag">AV-PLC-SERIES</span>
           <div class="product-card-name">Single Use Ligation Clips</div>
-          <div class="product-card-desc">MRI-safe, positive-lock ratchet. Medium, Medium-Large and Large — 6 clips per cartridge.</div>
           <a href="product-polymer-ligating-clips.html" class="product-card-link">View product <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
       <div class="product-card reveal reveal-delay-1">
-        <div class="product-card-img"><img src="assets/images/products/skin-stapler.png" alt="Single Use Skin Staplers &amp; Removers" loading="lazy"></div>
-        <div class="product-card-body">
+        <div class="product-card-img" style="aspect-ratio:3/4;"><img src="assets/images/products/skin-stapler.png" alt="Single Use Skin Staplers &amp; Removers" loading="lazy"></div>
+        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
           <span class="product-card-tag">AV-SS-SERIES</span>
           <div class="product-card-name">Single Use Skin Staplers &amp; Removers</div>
-          <div class="product-card-desc">Wide-crown stainless steel staples for rapid, even wound closure.</div>
           <a href="product-skin-stapler.html" class="product-card-link">View product <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
