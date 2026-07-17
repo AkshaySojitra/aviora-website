@@ -22,10 +22,12 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"></noscript>
 <link rel="preload" as="style" href="assets/css/styles.css">
-<link rel="preload" as="style" href="assets/css/styles.css">
-<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="preload" href="assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="preload" href="assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript></noscript>
 
 <style>
 /* Critical product page styles — embedded for reliability */
@@ -155,6 +157,32 @@ p  { color: var(--mid); line-height: 1.7; }
   .hero-inner { grid-template-columns: 1fr !important; }
   .hero-inner .hero-visual { margin-top: 0; }
 }
+</style>
+<style>
+/* Critical CSS — prevents FOUC while styles.css loads async */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px}
+body{font-family:'Inter',system-ui,sans-serif;color:#0F172A;background:#F8FAFC;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+:root{--primary:#005BAC;--secondary:#008ED8;--dark:#0F172A;--mid:#475569;--line:rgba(15,23,42,0.09);--bg:#F8FAFC;--white:#ffffff;--radius:10px;--container:1260px}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 24px}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;display:flex;align-items:center;transition:background 0.3s,box-shadow 0.3s}
+.nav-row{display:flex;align-items:center;justify-content:space-between;width:100%;height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-img{height:44px;width:auto;display:block}
+.main-nav{display:none;align-items:center;gap:32px;list-style:none}
+.main-nav a{font-size:15px;font-weight:500;color:#0F172A;text-decoration:none}
+.mobile-toggle{background:none;border:none;cursor:pointer;padding:8px;color:#0F172A}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;font-weight:600;font-size:14.5px;cursor:pointer;border:1.5px solid transparent;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s,filter 0.2s}
+.btn-primary{background:#005BAC;color:#fff}
+.btn-gradient{background:linear-gradient(135deg,#4F46E5,#7C3AED,#EC4899);color:#fff}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity 0.55s ease,transform 0.55s ease}
+.reveal.is-visible{opacity:1;transform:none}
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;background:#060E1A;overflow:hidden}
+.hero-inner{display:grid;gap:28px;align-items:center;padding-top:120px;padding-bottom:48px}
+h1,h2,h3,h4,h5{font-family:'Inter',sans-serif;color:#0F172A;letter-spacing:-0.025em;line-height:1.05;font-weight:700}
+h1{font-size:clamp(32px,5vw,58px)}
+@media(min-width:1000px){.main-nav{display:flex}.mobile-toggle{display:none}}
+@media(min-width:960px){.hero-inner{grid-template-columns:1.1fr 1.35fr}}
 </style>
 </head>
 <body>
