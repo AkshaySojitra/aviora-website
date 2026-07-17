@@ -22,7 +22,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
 /* ═══════════════════════════════════════════════════════════════
    AVIORA MedTech — Complete Design System v3
@@ -56,7 +56,7 @@ body {
   --bg:         #F8FAFC;
   --white:      #FFFFFF;
   --container:  1260px;
-  --radius:     8px;
+  --radius:     10px;
   --shadow-sm:  0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.05);
   --shadow-md:  0 4px 24px -6px rgba(15,23,42,0.18);
   --shadow-lg:  0 20px 48px -16px rgba(15,23,42,0.28);
@@ -66,7 +66,7 @@ body {
 }
 
 /* ── Typography ─────────────────────────────────────────────── */
-h1,h2,h3,h4,h5 { font-family: 'Poppins', sans-serif; color: var(--dark); letter-spacing: -0.02em; line-height: 1.12; }
+h1,h2,h3,h4,h5 { font-family: 'Inter', sans-serif; color: var(--dark); letter-spacing: -0.025em; line-height: 1.05; font-weight: 700; }
 h1 { font-size: clamp(32px, 5vw, 58px); font-weight: 700; }
 h2 { font-size: clamp(24px, 3.2vw, 40px); font-weight: 700; }
 h3 { font-size: clamp(18px, 2vw, 22px); font-weight: 600; }
@@ -182,7 +182,7 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .product-card-img-placeholder { color: var(--primary); opacity: 0.4; }
 .product-card-body { padding: 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .product-card-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--secondary); }
-.product-card-name { font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 600; color: var(--dark); line-height: 1.25; }
+.product-card-name { font-family: 'Inter', sans-serif; font-size: 16.5px; font-weight: 600; letter-spacing: -0.01em; color: var(--dark); line-height: 1.2; }
 .product-card-desc { font-size: 13.5px; color: var(--mid); line-height: 1.6; }
 .product-card-link {
   margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line);
@@ -399,7 +399,7 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .footer-logo-img { height: 44px; width: auto; }
 .footer-tagline { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; max-width: 28ch; }
 .footer-col h4 { color: #fff; font-size: 12px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
-.footer-col a { display: block; padding: 5px 0; font-size: 14px; color: rgba(255,255,255,0.55); transition: color var(--transition); }
+.footer-col a { display: block; padding: 5px 0; font-size: 13.5px; font-weight: 400; color: #94A3B8; transition: color var(--transition); }
 .footer-col a:hover { color: var(--accent2); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 24px 0; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; font-size: 12.5px; color: rgba(255,255,255,0.4); }
 .footer-bottom a { color: rgba(255,255,255,0.5); }
@@ -809,7 +809,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section class="section" style="padding-top:156px;padding-bottom:48px;">
   <div class="wrap">
     <span class="eyebrow">Launch portfolio</span>
-    <h1 style="margin-top:14px;max-width:720px;">Our surgical device portfolio.</h1>
+    <h1 style="margin-top:14px;max-width:720px;">Devices built for reliable clinical performance.</h1>
     <p style="margin-top:16px;max-width:580px;color:var(--mid);font-size:16px;">Our launch range covers five device categories used consistently in minimally invasive and general surgery — each sourced from globally recognised, ISO 13485 certified manufacturing partners.</p>
   </div>
 </section>
