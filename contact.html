@@ -85,6 +85,72 @@
   border-radius: 8px; font-size: 13.5px; color: var(--mid); line-height: 1.5;
 }
 </style>
+<style>
+/* ── Contact page ────────────────────────────────────────── */
+.contact-layout { display:grid; grid-template-columns:300px 1fr; gap:56px; align-items:start; }
+@media(max-width:900px){ .contact-layout{ grid-template-columns:1fr; gap:40px; } }
+
+.contact-detail { display:flex; align-items:flex-start; gap:14px; padding:16px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+.contact-detail:last-of-type{ border-bottom:none; }
+.contact-detail-icon{ width:36px; height:36px; border-radius:8px; background:rgba(0,91,172,0.07); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.contact-detail-label{ font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--mid); margin-bottom:3px; }
+.contact-detail-value{ font-size:14px; font-weight:500; color:var(--dark); }
+.contact-detail-sub{ font-size:12.5px; color:var(--mid); margin-top:2px; }
+
+/* Tabs */
+.enquiry-tabs { display:flex; gap:0; border:1px solid var(--line); border-radius:10px; overflow:hidden; margin-bottom:28px; background:var(--bg); }
+.enquiry-tab {
+  flex:1; padding:13px 12px; font-size:13.5px; font-weight:600;
+  text-align:center; cursor:pointer; border:none; background:transparent;
+  color:var(--mid); transition:all 0.18s; position:relative;
+  border-right:1px solid var(--line);
+}
+.enquiry-tab:last-child{ border-right:none; }
+.enquiry-tab.active{
+  background:var(--white); color:var(--primary);
+  box-shadow:0 1px 4px rgba(0,0,0,0.07);
+}
+.enquiry-tab .tab-badge{
+  display:inline-block; margin-left:6px; padding:2px 7px;
+  border-radius:100px; font-size:10px; font-weight:700;
+  background:rgba(0,91,172,0.12); color:var(--primary);
+  vertical-align:middle;
+}
+.enquiry-tab.active .tab-badge{ background:var(--primary); color:#fff; }
+
+/* Form panels */
+.form-panel{ display:none; }
+.form-panel.active{ display:block; }
+.form-panel-header{ margin-bottom:24px; }
+.form-panel-title{ font-size:18px; font-weight:700; color:var(--dark); }
+.form-panel-desc{ font-size:14px; color:var(--mid); margin-top:6px; line-height:1.5; }
+
+/* Fields */
+.f-field{ display:flex; flex-direction:column; gap:6px; }
+.f-field label{ font-size:13px; font-weight:600; color:var(--dark); }
+.f-field input,.f-field select,.f-field textarea{
+  border:1.5px solid var(--line-mid); border-radius:8px;
+  padding:11px 14px; font-family:inherit; font-size:14px;
+  background:var(--bg); color:var(--dark); width:100%;
+  transition:border-color 0.18s, box-shadow 0.18s;
+}
+.f-field input:focus,.f-field select:focus,.f-field textarea:focus{
+  border-color:var(--primary); outline:none; background:var(--white);
+  box-shadow:0 0 0 3px rgba(0,91,172,0.1);
+}
+.f-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+@media(max-width:600px){ .f-row{ grid-template-columns:1fr; } }
+.f-stack{ display:flex; flex-direction:column; gap:14px; }
+.f-success{
+  display:none; margin-top:14px; padding:13px 16px;
+  background:rgba(0,196,140,0.08); border:1px solid rgba(0,196,140,0.2);
+  border-radius:8px; font-size:14px; font-weight:600; color:#00875f;
+}
+.form-wrap{
+  background:var(--white); border:1px solid var(--line);
+  border-radius:12px; padding:32px;
+}
+</style>
 </head>
 <body>
 <a href="#main-content" class="sr-only" style="position:absolute;left:-9999px;top:4px;padding:8px 16px;background:var(--primary);color:#fff;border-radius:4px;font-weight:600;z-index:9999;">Skip to main content</a>
@@ -136,133 +202,182 @@
   <div class="wrap">
     <span class="eyebrow">Get in touch</span>
     <h1 style="margin-top:14px;max-width:680px;">Speak with the AVIORA team.</h1>
-    <p style="margin-top:16px;font-size:16px;color:var(--mid);line-height:1.6;max-width:560px;">Hospital procurement, distributor enquiries and product questions. We respond within 24 business hours.</p>
+    <p style="margin-top:16px;font-size:16px;color:var(--mid);line-height:1.6;max-width:560px;">Distributor partnerships, hospital procurement and general enquiries. We respond within 24 business hours.</p>
   </div>
 </section>
 
-<!-- CONTACT + FORMS -->
+<!-- CONTACT LAYOUT -->
 <section class="section">
   <div class="wrap">
-    <div class="contact-grid">
+    <div class="contact-layout">
 
-      <!-- LEFT: contact info -->
+      <!-- LEFT: details -->
       <div>
-        <h2 style="font-size:17px;font-weight:700;margin-bottom:4px;">Contact details</h2>
+        <p style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--mid);margin-bottom:4px;">Contact details</p>
 
-        <div style="margin-top:16px;">
-          <a href="mailto:info@avioramedtech.com" class="contact-info-item">
-            <div class="contact-info-icon">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4ZM4 9l8 6 8-6" stroke="var(--primary)" stroke-width="1.8" stroke-linejoin="round"/></svg>
-            </div>
-            <div>
-              <div class="contact-info-label">Email</div>
-              <div class="contact-info-value" style="color:var(--primary);">info@avioramedtech.com</div>
-            </div>
-          </a>
+        <a href="mailto:info@avioramedtech.com" class="contact-detail">
+          <div class="contact-detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4ZM4 9l8 6 8-6" stroke="var(--primary)" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+          <div>
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-value" style="color:var(--primary);">info@avioramedtech.com</div>
+          </div>
+        </a>
 
-          <a href="tel:+911234567890" class="contact-info-item">
-            <div class="contact-info-icon">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z" stroke="var(--primary)" stroke-width="1.8"/></svg>
-            </div>
-            <div>
-              <div class="contact-info-label">Phone</div>
-              <div class="contact-info-value">+91 12345 67890</div>
-              <div class="contact-info-sub">Mon – Sat, 9 AM – 6 PM IST</div>
-            </div>
-          </a>
+        <a href="tel:+911234567890" class="contact-detail">
+          <div class="contact-detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z" stroke="var(--primary)" stroke-width="1.8"/></svg></div>
+          <div>
+            <div class="contact-detail-label">Phone</div>
+            <div class="contact-detail-value">+91 12345 67890</div>
+            <div class="contact-detail-sub">Mon – Sat, 9 AM – 6 PM IST</div>
+          </div>
+        </a>
 
-          <a href="https://wa.me/911234567890" target="_blank" rel="noopener" class="contact-info-item">
-            <div class="contact-info-icon" style="background:rgba(37,211,102,0.1);">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z" stroke="#25D366" stroke-width="1.8"/></svg>
-            </div>
-            <div>
-              <div class="contact-info-label">WhatsApp</div>
-              <div class="contact-info-value" style="color:#128C7E;">+91 12345 67890</div>
-              <div class="contact-info-sub">Quick response via chat</div>
-            </div>
-          </a>
+        <a href="https://wa.me/911234567890" target="_blank" rel="noopener" class="contact-detail">
+          <div class="contact-detail-icon" style="background:rgba(37,211,102,0.1);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z" stroke="#25D366" stroke-width="1.8"/></svg></div>
+          <div>
+            <div class="contact-detail-label">WhatsApp</div>
+            <div class="contact-detail-value" style="color:#128C7E;">Chat with our team</div>
+          </div>
+        </a>
 
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7Z" stroke="var(--primary)" stroke-width="1.8"/></svg>
-            </div>
-            <div>
-              <div class="contact-info-label">Office</div>
-              <div class="contact-info-value">Vadodara, Gujarat</div>
-              <div class="contact-info-sub">India 390 001</div>
-            </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7Z" stroke="var(--primary)" stroke-width="1.8"/></svg></div>
+          <div>
+            <div class="contact-detail-label">Office</div>
+            <div class="contact-detail-value">Vadodara, Gujarat</div>
+            <div class="contact-detail-sub">India 390 001</div>
           </div>
         </div>
 
-        <div class="response-note">
-          <strong style="color:var(--dark);">24-hour response</strong><br>
-          All enquiries answered within one business day.
+        <div style="margin-top:20px;padding:14px 16px;background:rgba(0,91,172,0.04);border:1px solid rgba(0,91,172,0.1);border-radius:8px;font-size:13px;color:var(--mid);line-height:1.5;">
+          <strong style="color:var(--dark);">24-hour response</strong><br>All enquiries answered within one business day.
         </div>
       </div>
 
-      <!-- RIGHT: forms -->
+      <!-- RIGHT: tabbed forms -->
       <div>
+        <div class="form-wrap">
 
-        <!-- Hospital enquiry -->
-        <div class="form-card">
-          <span class="eyebrow">Hospital Enquiry</span>
-          <div class="form-card-title">Product &amp; procurement enquiries</div>
-          <div class="form-card-desc">For hospitals, surgeons and procurement committees.</div>
-          <form onsubmit="event.preventDefault();this.querySelector('.form-success-msg').style.display='block';">
-            <div class="form-fields">
-              <div class="form-row">
-                <div class="field"><label>Full name</label><input type="text" required placeholder="Dr. Anand Shah"></div>
-                <div class="field"><label>Hospital / Institution</label><input type="text" required></div>
-              </div>
-              <div class="form-row">
-                <div class="field"><label>Email</label><input type="email" required></div>
-                <div class="field"><label>Phone</label><input type="tel" required></div>
-              </div>
-              <div class="field">
-                <label>Product of interest</label>
-                <select>
-                  <option>Single Use Trocars</option>
-                  <option>Single Use Linear Cutter</option>
-                  <option>Single Use Hemorrhoidal Stapler</option>
-                  <option>Polymer Ligating Clips</option>
-                  <option>Single Use Skin Stapler &amp; Remover</option>
-                  <option>Multiple products / other</option>
-                </select>
-              </div>
-              <div class="field"><label>Estimated quantity</label><input type="text" placeholder="e.g. 50 units / month"></div>
-              <div class="field"><label>Message <span style="font-weight:400;color:var(--mid);">(optional)</span></label><textarea rows="3" placeholder="Specification requirements, delivery location, tender details..."></textarea></div>
-              <button type="submit" class="btn btn-gradient" style="width:100%;justify-content:center;padding:13px;">Send Enquiry</button>
-              <div class="form-success-msg">&#10003; Received — we will respond within 24 business hours.</div>
+          <!-- Tab buttons -->
+          <div class="enquiry-tabs" role="tablist">
+            <button class="enquiry-tab active" role="tab" aria-selected="true"
+                    onclick="switchTab(this,'tab-distributor')">
+              Distributor <span class="tab-badge">★</span>
+            </button>
+            <button class="enquiry-tab" role="tab" aria-selected="false"
+                    onclick="switchTab(this,'tab-hospital')">
+              Hospital
+            </button>
+            <button class="enquiry-tab" role="tab" aria-selected="false"
+                    onclick="switchTab(this,'tab-general')">
+              General
+            </button>
+          </div>
+
+          <!-- ── Tab 1: Distributor (default / featured) ── -->
+          <div id="tab-distributor" class="form-panel active">
+            <div class="form-panel-header">
+              <div class="form-panel-title">Become a distributor</div>
+              <div class="form-panel-desc">Expand your business with an established surgical device line. We partner with regional distributors across India.</div>
             </div>
-          </form>
-        </div>
+            <form onsubmit="event.preventDefault();this.querySelector('.f-success').style.display='block';">
+              <div class="f-stack">
+                <div class="f-row">
+                  <div class="f-field"><label>Full name</label><input type="text" required placeholder="Your name"></div>
+                  <div class="f-field"><label>Company name</label><input type="text" required placeholder="Your company"></div>
+                </div>
+                <div class="f-row">
+                  <div class="f-field"><label>Email</label><input type="email" required placeholder="you@company.com"></div>
+                  <div class="f-field"><label>Phone</label><input type="tel" required placeholder="+91 XXXXX XXXXX"></div>
+                </div>
+                <div class="f-row">
+                  <div class="f-field"><label>Territory</label><input type="text" required placeholder="State / Region"></div>
+                  <div class="f-field"><label>Current brands handled</label><input type="text" placeholder="Optional"></div>
+                </div>
+                <div class="f-field"><label>About your business</label><textarea rows="3" placeholder="Hospitals covered, team size, distribution experience..."></textarea></div>
+                <button type="submit" class="btn btn-gradient" style="width:100%;justify-content:center;padding:14px;font-size:15px;">Submit Partnership Application</button>
+                <div class="f-success">&#10003; Application received — our partnerships team will be in touch within 24 hours.</div>
+              </div>
+            </form>
+          </div>
 
-        <!-- Distributor enquiry -->
-        <div class="form-card">
-          <span class="eyebrow">Distributor Enquiry</span>
-          <div class="form-card-title">Partnership applications</div>
-          <div class="form-card-desc">For regional distributors and medical device traders.</div>
-          <form onsubmit="event.preventDefault();this.querySelector('.form-success-msg').style.display='block';">
-            <div class="form-fields">
-              <div class="form-row">
-                <div class="field"><label>Full name</label><input type="text" required></div>
-                <div class="field"><label>Company name</label><input type="text" required></div>
-              </div>
-              <div class="form-row">
-                <div class="field"><label>Email</label><input type="email" required></div>
-                <div class="field"><label>Territory</label><input type="text" required placeholder="State / Region"></div>
-              </div>
-              <div class="field"><label>About your business</label><textarea rows="3" placeholder="Hospitals covered, team size, current brands..."></textarea></div>
-              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:13px;">Submit Application</button>
-              <div class="form-success-msg">&#10003; Application received — our team will be in touch.</div>
+          <!-- ── Tab 2: Hospital ── -->
+          <div id="tab-hospital" class="form-panel">
+            <div class="form-panel-header">
+              <div class="form-panel-title">Hospital &amp; procurement enquiry</div>
+              <div class="form-panel-desc">For hospitals, surgeons and procurement committees requiring product information, specifications or quotations.</div>
             </div>
-          </form>
-        </div>
+            <form onsubmit="event.preventDefault();this.querySelector('.f-success').style.display='block';">
+              <div class="f-stack">
+                <div class="f-row">
+                  <div class="f-field"><label>Full name</label><input type="text" required placeholder="Dr. / Mr. / Ms."></div>
+                  <div class="f-field"><label>Hospital / Institution</label><input type="text" required></div>
+                </div>
+                <div class="f-row">
+                  <div class="f-field"><label>Email</label><input type="email" required></div>
+                  <div class="f-field"><label>Phone</label><input type="tel" required></div>
+                </div>
+                <div class="f-field">
+                  <label>Product of interest</label>
+                  <select>
+                    <option>Single Use Trocars</option>
+                    <option>Single Use Linear Cutter</option>
+                    <option>Single Use Hemorrhoidal Stapler (PPH)</option>
+                    <option>Polymer Ligating Clips</option>
+                    <option>Single Use Skin Stapler &amp; Remover</option>
+                    <option>Multiple products / other</option>
+                  </select>
+                </div>
+                <div class="f-field"><label>Estimated quantity</label><input type="text" placeholder="e.g. 50 units / month"></div>
+                <div class="f-field"><label>Message <span style="font-weight:400;color:var(--mid);">(optional)</span></label><textarea rows="3" placeholder="Specification requirements, delivery location, tender details..."></textarea></div>
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;font-size:15px;">Send Enquiry</button>
+                <div class="f-success">&#10003; Received — we will respond within 24 business hours.</div>
+              </div>
+            </form>
+          </div>
 
+          <!-- ── Tab 3: General ── -->
+          <div id="tab-general" class="form-panel">
+            <div class="form-panel-header">
+              <div class="form-panel-title">General enquiry</div>
+              <div class="form-panel-desc">For suppliers, regulatory consultants, international partners, media, investors or any other enquiry.</div>
+            </div>
+            <form onsubmit="event.preventDefault();this.querySelector('.f-success').style.display='block';">
+              <div class="f-stack">
+                <div class="f-row">
+                  <div class="f-field"><label>Full name</label><input type="text" required></div>
+                  <div class="f-field"><label>Organisation</label><input type="text" placeholder="Optional"></div>
+                </div>
+                <div class="f-row">
+                  <div class="f-field"><label>Email</label><input type="email" required></div>
+                  <div class="f-field"><label>Phone</label><input type="tel" placeholder="Optional"></div>
+                </div>
+                <div class="f-field"><label>Subject</label><input type="text" required placeholder="Brief subject"></div>
+                <div class="f-field"><label>Message</label><textarea rows="4" placeholder="Tell us how we can help..."></textarea></div>
+                <button type="submit" class="btn btn-outline" style="width:100%;justify-content:center;padding:14px;font-size:15px;">Send Message</button>
+                <div class="f-success">&#10003; Message received — we will get back to you shortly.</div>
+              </div>
+            </form>
+          </div>
+
+        </div><!-- /form-wrap -->
       </div>
     </div>
   </div>
 </section>
+
+<script>
+function switchTab(btn, panelId) {
+  document.querySelectorAll('.enquiry-tab').forEach(t => {
+    t.classList.remove('active');
+    t.setAttribute('aria-selected','false');
+  });
+  document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected','true');
+  document.getElementById(panelId).classList.add('active');
+}
+</script>
 
 </main>
 
