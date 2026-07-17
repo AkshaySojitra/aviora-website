@@ -147,6 +147,14 @@ p  { color: var(--mid); line-height: 1.7; }
   section[style*="padding-top:156px"] { padding-top: 96px !important; }
 }
 </style>
+<style>
+.hero-visual { display: block !important; opacity: 1 !important; transform: none !important; }
+@media (max-width: 959px) {
+  .hero-visual { display: block !important; }
+  .hero-inner { grid-template-columns: 1fr !important; }
+  .hero-inner .hero-visual { margin-top: 0; }
+}
+</style>
 </head>
 <body>
 <a href="#main-content" class="sr-only" style="position:absolute;left:-9999px;top:4px;padding:8px 16px;background:var(--primary);color:#fff;border-radius:4px;font-weight:600;z-index:9999;">Skip to main content</a>
@@ -198,7 +206,7 @@ p  { color: var(--mid); line-height: 1.7; }
   <div class="hero-bg-glow"  aria-hidden="true"></div>
   <div class="hero-bg-glow-2" aria-hidden="true"></div>
 
-  <div class="wrap hero-inner">
+  <div class="wrap hero-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding-top:120px;padding-bottom:40px;">
     <!-- Left: text -->
     <div>
       <h1>Precision Surgical Technologies for <em>Modern Healthcare</em></h1>
@@ -206,11 +214,11 @@ p  { color: var(--mid); line-height: 1.7; }
     </div>
 
     <!-- Right: blueprint device image in frame -->
-    <div class="hero-visual reveal">
+    <div class="hero-visual" style="opacity:1;transform:none;">
       <div class="hero-device-frame" style="padding:0;overflow:hidden;border-radius:12px;">
         <img src="assets/images/hero-device.jpg"
              alt="Single Use Linear Cutter and Trocar — precision engineering blueprint"
-             style="width:100%;display:block;border-radius:12px;"
+             style="width:100%;height:auto;display:block;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,0.4);"
              loading="eager">
         <div class="hero-device-badge">
           <span class="hero-badge-dot"></span>
