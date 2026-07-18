@@ -11,6 +11,26 @@
     }
     toggleSolid();
     window.addEventListener('scroll', toggleSolid, { passive: true });
+
+    // Hide header when scrolling down past it, show again when scrolling up
+    var lastScrollY = window.scrollY;
+    var headerHeight = header.offsetHeight;
+    function toggleHideOnScroll() {
+      var currentY = window.scrollY;
+      if (currentY > lastScrollY && currentY > headerHeight) {
+        header.classList.add('is-hidden');
+      } else if (currentY < lastScrollY) {
+        header.classList.remove('is-hidden');
+      }
+      if (currentY <= 0) { header.classList.remove('is-hidden'); }
+      lastScrollY = currentY;
+    }
+    window.addEventListener('scroll', toggleHideOnScroll, { passive: true });
+    // Always show header when mobile menu opens
+    var mobileToggleBtn = document.querySelector('.mobile-toggle');
+    if (mobileToggleBtn) {
+      mobileToggleBtn.addEventListener('click', function () { header.classList.remove('is-hidden'); });
+    }
   }
 
   /* ── Mobile menu ──────────────────────────────────────────── */
