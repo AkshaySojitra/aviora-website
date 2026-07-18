@@ -266,224 +266,24 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 
   <!-- Trust strip — single horizontal line -->
   <div style="border-top:1px solid rgba(255,255,255,0.1);position:relative;z-index:2;">
-    <div style="display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:nowrap;overflow:hidden;">
-      <div style="display:flex;align-items:center;gap:10px;padding:14px 32px;border-right:1px solid rgba(255,255,255,0.08);white-space:nowrap;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="#A78BFA" stroke-width="2"/></svg>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.85);">ISO 13485 Quality Systems</span>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;">
+      <div style="display:flex;align-items:center;gap:10px;padding:14px 20px;border-right:1px solid rgba(255,255,255,0.08);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="#A78BFA" stroke-width="2"/></svg>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.85);">ISO 13485 Quality</span>
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:14px 32px;border-right:1px solid rgba(255,255,255,0.08);white-space:nowrap;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z" stroke="#A78BFA" stroke-width="2"/></svg>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.85);">CE Documented Products</span>
+      <div style="display:flex;align-items:center;gap:10px;padding:14px 20px;border-right:1px solid rgba(255,255,255,0.08);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z" stroke="#A78BFA" stroke-width="2"/></svg>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.85);">CE Documented</span>
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:14px 32px;border-right:1px solid rgba(255,255,255,0.08);white-space:nowrap;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3 8 4-16 3 8h4" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"/></svg>
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.85);">Full Lot Traceability</span>
+      <div style="display:flex;align-items:center;gap:10px;padding:14px 20px;border-right:1px solid rgba(255,255,255,0.08);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><path d="M3 12h4l3 8 4-16 3 8h4" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"/></svg>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.85);">Lot Traceability</span>
       </div>
-      <div style="display:flex;align-items:center;gap:10px;padding:14px 32px;white-space:nowrap;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6A2 2 0 0 1 22 17Z" stroke="#A78BFA" stroke-width="2"/></svg>
+      <div style="display:flex;align-items:center;gap:10px;padding:14px 20px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6A2 2 0 0 1 22 17Z" stroke="#A78BFA" stroke-width="2"/></svg>
         <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.85);">Technical Support</span>
       </div>
     </div>
   </div>
 
 </section>
-
-<!-- WHY CHOOSE AVIORA -->
-<section class="section section-alt">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Why AVIORA</span>
-      <h2 style="margin-top:14px;">Six reasons hospitals and distributors choose us.</h2>
-    </div>
-    <div class="grid g3" style="gap:20px;">
-
-      <div class="card" style="padding:24px;">
-        <h3 style="font-size:15px;margin-bottom:8px;">Verified Device Quality</h3>
-        <p style="font-size:13.5px;color:var(--mid);">Designed with clinical performance in mind. Sourced from facilities with documented design controls and risk management files.</p>
-      </div>
-
-      <div class="card" style="padding:24px;">
-        <h3 style="font-size:15px;margin-bottom:8px;">Manufacturing Quality</h3>
-        <p style="font-size:13.5px;color:var(--mid);">Produced under ISO 13485 certified quality management systems. In-process inspection at critical control points.</p>
-      </div>
-
-      <div class="card" style="padding:24px;">
-        <h3 style="font-size:15px;margin-bottom:8px;">Technical Documentation</h3>
-        <p style="font-size:13.5px;color:var(--mid);">Brochures, IFUs, CE technical files and sterilisation records available on request for every product line.</p>
-      </div>
-
-      <div class="card" style="padding:24px;">
-        <h3 style="font-size:15px;margin-bottom:8px;">Consistent Supply</h3>
-        <p style="font-size:13.5px;color:var(--mid);">Standard SKUs dispatched within one working day. Full lot traceability from manufacturer to hospital on every order.</p>
-      </div>
-
-      <div class="card" style="padding:24px;">
-        <h3 style="font-size:15px;margin-bottom:8px;">Regulatory Support</h3>
-        <p style="font-size:13.5px;color:var(--mid);">CDSCO registered importer. CE documentation, ISO 13485 certificates and compliance files available per product.</p>
-      </div>
-
-      <div class="card" style="padding:24px;">
-        <h3 style="font-size:15px;margin-bottom:8px;">Partnership Approach</h3>
-        <p style="font-size:13.5px;color:var(--mid);">Long-term relationships with regional distributors and hospital procurement teams — not just individual orders.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- COMPANY INTRO -->
-<section class="section section-alt" id="company-intro">
-  <div class="wrap">
-    <div class="r2" style="gap:56px;align-items:start;">
-      <div class="reveal">
-        <span class="eyebrow">Who we are</span>
-        <h2 style="margin-top:14px;">A registered importer and distributor of single-use surgical devices.</h2>
-        <p style="margin-top:16px;color:var(--mid);font-size:16px;max-width:540px;">AVIORA MedTech is a registered importer and distributor of single-use surgical devices in India. We work with ISO 13485 certified manufacturing partners to supply hospitals and surgical centres with devices that meet exacting quality standards.</p>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <div style="border:1px solid var(--line);border-radius:10px;overflow:hidden;">
-          <div style="padding:24px 28px;border-bottom:1px solid var(--line);">
-            <span class="eyebrow" style="color:var(--secondary);">Vision</span>
-            <p style="margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6;">To supply surgical devices that hospital procurement teams can rely on — consistent quality, accurate documentation, dependable availability.</p>
-          </div>
-          <div style="padding:24px 28px;">
-            <span class="eyebrow" style="color:var(--secondary);">Mission</span>
-            <p style="margin-top:10px;font-size:15px;color:var(--mid);line-height:1.6;">Source, qualify and supply single-use surgical devices with full lot documentation and local technical support across India.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCT PORTFOLIO -->
-<section class="section" id="products">
-  <div class="wrap">
-    <div style="display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:start;">
-
-      <!-- Left: evidence checklist -->
-      <div style="position:sticky;top:100px;">
-        <span class="eyebrow">Product portfolio</span>
-        <h2 style="margin-top:14px;font-size:22px;">Established surgical device portfolio.</h2>
-        <div style="margin-top:24px;display:flex;flex-direction:column;gap:0;">
-          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:500;color:var(--dark);">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Single Use Trocars</div>
-          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:500;color:var(--dark);">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Single Use Linear Cutter</div>
-          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:500;color:var(--dark);">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Single Use Hemorrhoidal Stapler</div>
-          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:500;color:var(--dark);">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Polymer Ligating Clips</div>
-          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;font-size:14px;font-weight:500;color:var(--dark);">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Single Use Skin Stapler &amp; Remover</div>
-        </div>
-        <div style="margin-top:24px;padding:14px 16px;background:rgba(0,91,172,0.04);border:1px solid rgba(0,91,172,0.1);border-radius:8px;">
-          <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--secondary);margin-bottom:6px;">All products</div>
-          <div style="font-size:13px;color:var(--mid);">ISO 13485 certified manufacturing. CE documentation on request. Full lot traceability.</div>
-        </div>
-        <a href="products.html" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">View all products</a>
-      </div>
-
-      <!-- Right: product cards -->
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;">
-      <div class="product-card reveal">
-        <div class="product-card-img" style="aspect-ratio:1/1;background:#f8fafc;"><img src="assets/images/products/trocar.webp" alt="Single Use Trocars" loading="lazy" width="528" height="528"></div>
-        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
-          <div class="product-card-name" style="display:flex;align-items:center;justify-content:space-between;gap:8px;">Single Use Trocars<svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;" aria-label="CE Marked"><path d="M9 2 A5 5 0 1 0 9 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M20 2 A5 5 0 1 0 20 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><line x1="15" y1="7" x2="20" y2="7" stroke="#005BAC" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <a href="product-disposable-trocars.html" class="product-card-link">View details <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-      <div class="product-card reveal reveal-delay-1">
-        <div class="product-card-img" style="aspect-ratio:1/1;background:#f8fafc;"><img src="assets/images/products/linear-cutter2.webp" alt="Single Use Linear Cutter" loading="lazy" width="528" height="528"></div>
-        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
-          <div class="product-card-name" style="display:flex;align-items:center;justify-content:space-between;gap:8px;">Single Use Linear Cutter<svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;" aria-label="CE Marked"><path d="M9 2 A5 5 0 1 0 9 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M20 2 A5 5 0 1 0 20 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><line x1="15" y1="7" x2="20" y2="7" stroke="#005BAC" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <a href="product-linear-cutter-stapler.html" class="product-card-link">View details <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-      <div class="product-card reveal reveal-delay-2">
-        <div class="product-card-img" style="aspect-ratio:1/1;background:#f8fafc;"><img src="assets/images/products/pph-stapler.webp" alt="Single Use Hemorrhoidal Stapler" loading="lazy" width="528" height="528"></div>
-        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
-          <div class="product-card-name" style="display:flex;align-items:center;justify-content:space-between;gap:8px;">Single Use Hemorrhoidal Stapler<svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;" aria-label="CE Marked"><path d="M9 2 A5 5 0 1 0 9 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M20 2 A5 5 0 1 0 20 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><line x1="15" y1="7" x2="20" y2="7" stroke="#005BAC" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <a href="product-pph-stapler.html" class="product-card-link">View details <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-      <div class="product-card reveal reveal-delay-3">
-        <div class="product-card-img" style="aspect-ratio:1/1;background:#f8fafc;"><img src="assets/images/products/ligation-clips.webp" alt="Polymer Ligating Clips" loading="lazy" width="528" height="528"></div>
-        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
-          <div class="product-card-name" style="display:flex;align-items:center;justify-content:space-between;gap:8px;">Polymer Ligating Clips<svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;" aria-label="CE Marked"><path d="M9 2 A5 5 0 1 0 9 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M20 2 A5 5 0 1 0 20 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><line x1="15" y1="7" x2="20" y2="7" stroke="#005BAC" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <a href="product-polymer-ligating-clips.html" class="product-card-link">View details <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-      <div class="product-card reveal reveal-delay-1">
-        <div class="product-card-img" style="aspect-ratio:1/1;background:#f8fafc;"><img src="assets/images/products/skin-stapler.webp" alt="Single Use Skin Stapler &amp; Remover" loading="lazy" width="528" height="528"></div>
-        <div class="product-card-body" style="padding:16px 20px;gap:6px;">
-          <div class="product-card-name" style="display:flex;align-items:center;justify-content:space-between;gap:8px;">Single Use Skin Stapler &amp; Remover<svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;" aria-label="CE Marked"><path d="M9 2 A5 5 0 1 0 9 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M20 2 A5 5 0 1 0 20 12" stroke="#005BAC" stroke-width="2" stroke-linecap="round" fill="none"/><line x1="15" y1="7" x2="20" y2="7" stroke="#005BAC" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <a href="product-skin-stapler.html" class="product-card-link">View details <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-</main>
-
-<footer class="site-footer" role="contentinfo">
-  <div class="wrap">
-    <div class="footer-top">
-      <div>
-        <div class="footer-logo">
-          <img src="assets/images/logo-transparent.webp" alt="AVIORA MedTech" class="footer-logo-img" loading="lazy" width="480" height="108" style="width:auto;height:32px;" width="480" height="108" style="width:auto;height:32px;">
-        </div>
-        <p class="footer-tagline">Surgical devices for surgical care — sourced from ISO 13485 certified manufacturing partners, supplied across India.</p>
-        <div class="social-row" style="margin-top:20px;">
-          <a href="#" class="social-link" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg></a>
-          <a href="https://wa.me/911234567890" class="social-link" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Products</h4>
-        <a href="product-disposable-trocars.html">Single Use Trocars</a>
-        <a href="product-linear-cutter-stapler.html">Single Use Linear Cutter</a>
-        <a href="product-pph-stapler.html">Single Use Hemorrhoidal Stapler</a>
-        <a href="product-polymer-ligating-clips.html">Polymer Ligating Clips</a>
-        <a href="product-skin-stapler.html">Single Use Skin Stapler &amp; Remover</a>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <a href="about.html">About Us</a>
-        <a href="quality.html">Quality &amp; Compliance</a>
-        <a href="manufacturing.html">Manufacturing</a>
-        <a href="distributors.html">Distributors</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <a href="mailto:info@avioramedtech.com">info@avioramedtech.com</a>
-        <a href="tel:+911234567890">+91 12345 67890</a>
-        <a href="https://wa.me/911234567890">WhatsApp Chat</a>
-      </div>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="footer-bottom">
-      <span>&copy; 2026 AVIORA MedTech LLP. All rights reserved.</span>
-      <span><a href="privacy.html" style="color:rgba(255,255,255,0.5);">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="terms.html" style="color:rgba(255,255,255,0.5);">Terms &amp; Conditions</a></span>
-    </div>
-  </div>
-</footer>
-
-<a href="https://wa.me/911234567890" class="wa-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"/></svg>
-</a>
-<script src="assets/js/main.js" defer></script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization",
-"name":"AVIORA MedTech","url":"https://www.avioramedtech.com/",
-"description":"Importer and distributor of single-use surgical devices in India.",
-"address":{"@type":"PostalAddress","streetAddress":"Plot 14, MediTech Industrial Park","addressLocality":"Vadodara","addressRegion":"Gujarat","addressCountry":"IN"},
-"telephone":"+91-12345-67890","email":"info@avioramedtech.com"}</script>
-</body>
-</html>
