@@ -48,6 +48,6 @@
   .hero-split-img img{object-position:center center;}
 }
 @media(max-width:600px){
-  .hero-light{padding-top:64px;}
+  .hero-light{padding-top:110px;}
   .hero-split-img{max-height:64vw;}
 }
