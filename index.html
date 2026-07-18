@@ -324,11 +324,33 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 <!-- PRODUCT PORTFOLIO -->
 <section class="section" id="products">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Product portfolio</span>
-      <h2 style="margin-top:14px;">Single-use devices for the operating theatre.</h2>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px;">
+    <div style="display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:start;">
+
+      <!-- Left: evidence checklist -->
+      <div style="position:sticky;top:100px;">
+        <span class="eyebrow">Product portfolio</span>
+        <h2 style="margin-top:14px;font-size:22px;">Established surgical device portfolio.</h2>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:500;color:var(--dark);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Single Use Trocars</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:500;color:var(--dark);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Single Use Linear Cutter</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:500;color:var(--dark);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Single Use Hemorrhoidal Stapler</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:500;color:var(--dark);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Polymer Ligating Clips</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:12px 0;font-size:14px;font-weight:500;color:var(--dark);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round"/></svg>Single Use Skin Stapler &amp; Remover</div>
+        </div>
+        <div style="margin-top:24px;padding:14px 16px;background:rgba(0,91,172,0.04);border:1px solid rgba(0,91,172,0.1);border-radius:8px;">
+          <div style="font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--secondary);margin-bottom:6px;">All products</div>
+          <div style="font-size:13px;color:var(--mid);">ISO 13485 certified manufacturing. CE documentation on request. Full lot traceability.</div>
+        </div>
+        <a href="products.html" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">View all products</a>
+      </div>
+
+      <!-- Right: product cards -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;">
       <div class="product-card reveal">
         <div class="product-card-img" style="aspect-ratio:1/1;background:#f8fafc;"><img src="assets/images/products/trocar.webp" alt="Single Use Trocars" loading="lazy" width="528" height="528"></div>
         <div class="product-card-body" style="padding:16px 20px;gap:6px;">
@@ -364,6 +386,8 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
           <a href="product-skin-stapler.html" class="product-card-link">View details <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
+      </div>
+
     </div>
   </div>
 </section>
