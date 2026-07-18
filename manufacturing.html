@@ -117,84 +117,73 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
   <div class="wrap">
     <span class="eyebrow">Manufacturing</span>
     <h1 style="margin-top:14px;max-width:760px;">How AVIORA devices are built.</h1>
-    <p style="margin-top:16px;font-size:16px;color:var(--mid);line-height:1.6;max-width:640px;">Every device in our portfolio follows a structured development and manufacturing process — from clinical specification through to sterile delivery.</p>
+    <p style="margin-top:16px;font-size:16px;color:var(--mid);line-height:1.6;max-width:640px;">Every device follows a structured process — from clinical specification through to sterile delivery.</p>
   </div>
 </section>
 
 <style>
-.mfg-step{display:grid;grid-template-columns:64px 1fr;gap:32px;padding:40px 0;border-bottom:1px solid var(--line);position:relative;align-items:start;}
-.mfg-step:last-child{border-bottom:none;}
-.mfg-num{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.1em;color:var(--secondary);padding-top:4px;}
-.mfg-title{font-size:19px;font-weight:600;color:var(--dark);margin-bottom:12px;letter-spacing:-0.02em;}
-.mfg-text{font-size:15.5px;color:var(--mid);line-height:1.7;max-width:620px;}
-.mfg-arrow{text-align:center;padding:8px 0 0;}
-@media(max-width:600px){
-  .mfg-step{grid-template-columns:40px 1fr;gap:16px;padding:28px 0;}
-  .mfg-title{font-size:17px;}
-  .mfg-text{font-size:15px;}
+.q-row{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;align-items:start;}
+.q-title{margin-top:10px;font-size:19px;line-height:1.2;font-weight:600;color:var(--dark);letter-spacing:-0.02em;}
+.q-text{font-size:16px;color:var(--mid);line-height:1.7;max-width:580px;}
+@media(max-width:700px){
+  .q-row{grid-template-columns:1fr;gap:8px;padding:28px 0;}
+  .q-label{display:flex;align-items:center;gap:12px;}
+  .q-title{margin-top:0;font-size:17px;}
+  .q-text{font-size:15px;}
 }
 </style>
 
 <section class="section">
-  <div class="wrap">
-    <div>
-      
-    <div class="mfg-step">
-      <div class="mfg-num">01</div>
-      <div class="mfg-content">
-        <h2 class="mfg-title">Research & Development</h2>
-        <p class="mfg-text">Each device in the AVIORA portfolio begins with a defined clinical requirement. We evaluate existing surgical techniques, identify performance gaps and establish the functional specification against which the device will be designed and validated. Market input is gathered from surgeons and procurement teams before any engineering work begins.</p>
+  <div class="wrap" style="display:flex;flex-direction:column;">
+    
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">01</span>
+        <h2 class="q-title">Research & Development</h2>
       </div>
-      <div class="mfg-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5v14m0 0-5-5m5 5 5-5" stroke="rgba(255,255,255,0.2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="q-text">Clinical requirements are defined with input from surgeons and procurement teams. Performance specifications are established before any engineering work begins.</p>
     </div>
-    <div class="mfg-step">
-      <div class="mfg-num">02</div>
-      <div class="mfg-content">
-        <h2 class="mfg-title">Engineering</h2>
-        <p class="mfg-text">Device engineering is carried out under formal design controls aligned to ISO 13485 and applicable standards. Design outputs — drawings, material specifications, assembly instructions — are reviewed and approved before prototyping. Design verification confirms that outputs meet inputs. Design validation confirms the device performs as intended under actual use conditions.</p>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">02</span>
+        <h2 class="q-title">Engineering</h2>
       </div>
-      <div class="mfg-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5v14m0 0-5-5m5 5 5-5" stroke="rgba(255,255,255,0.2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="q-text">Device design follows formal controls aligned to ISO 13485. Design outputs are reviewed and approved before prototyping. Verification confirms outputs meet inputs; validation confirms performance under actual use conditions.</p>
     </div>
-    <div class="mfg-step">
-      <div class="mfg-num">03</div>
-      <div class="mfg-content">
-        <h2 class="mfg-title">Material Selection</h2>
-        <p class="mfg-text">Materials are selected based on biocompatibility, mechanical performance and sterilisation compatibility. All materials in contact with tissue or sterile surfaces are evaluated against ISO 10993. Supplier qualification records confirm that raw material batches meet specification before they are released for production use.</p>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">03</span>
+        <h2 class="q-title">Material Selection</h2>
       </div>
-      <div class="mfg-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5v14m0 0-5-5m5 5 5-5" stroke="rgba(255,255,255,0.2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="q-text">Materials are selected based on biocompatibility, mechanical performance and sterilisation compatibility. All tissue-contact materials are evaluated against ISO 10993 before production use.</p>
     </div>
-    <div class="mfg-step">
-      <div class="mfg-num">04</div>
-      <div class="mfg-content">
-        <h2 class="mfg-title">Manufacturing</h2>
-        <p class="mfg-text">Production takes place in controlled environments under documented standard operating procedures. Critical process parameters — temperature, torque, assembly dimensions — are monitored and recorded at defined inspection points. In-process quality checks are performed by trained operators and independently verified by quality personnel before the batch proceeds to the next stage.</p>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">04</span>
+        <h2 class="q-title">Manufacturing</h2>
       </div>
-      <div class="mfg-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5v14m0 0-5-5m5 5 5-5" stroke="rgba(255,255,255,0.2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="q-text">Production takes place in controlled environments under documented SOPs. Critical parameters are monitored at defined inspection points. In-process checks are performed and independently verified before each batch proceeds.</p>
     </div>
-    <div class="mfg-step">
-      <div class="mfg-num">05</div>
-      <div class="mfg-content">
-        <h2 class="mfg-title">Quality Validation</h2>
-        <p class="mfg-text">Finished devices are validated through installation qualification (IQ), operational qualification (OQ) and performance qualification (PQ) protocols. Each batch is released against documented acceptance criteria. Risk management files are maintained per ISO 14971. Certificates of conformity and full traceability records accompany every batch shipped to AVIORA.</p>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">05</span>
+        <h2 class="q-title">Quality Validation</h2>
       </div>
-      <div class="mfg-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5v14m0 0-5-5m5 5 5-5" stroke="rgba(255,255,255,0.2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="q-text">Finished devices are validated through IQ, OQ and PQ protocols. Each batch is released against documented acceptance criteria. Risk management files are maintained per ISO 14971.</p>
     </div>
-    <div class="mfg-step">
-      <div class="mfg-num">06</div>
-      <div class="mfg-content">
-        <h2 class="mfg-title">Sterile Packaging</h2>
-        <p class="mfg-text">Devices are packaged in validated sterile barrier systems in accordance with ISO 11607. Packaging seal strength, integrity and microbial barrier performance are tested and documented. EO sterilisation is performed in validated cycles with biological indicator monitoring. Sterility assurance level (SAL) of 10⁻⁶ is maintained for all applicable products.</p>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">06</span>
+        <h2 class="q-title">Sterile Packaging</h2>
       </div>
-      <div class="mfg-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5v14m0 0-5-5m5 5 5-5" stroke="rgba(255,255,255,0.2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="q-text">Devices are packaged in validated sterile barrier systems per ISO 11607. EO sterilisation is performed in validated cycles with biological indicator monitoring to SAL 10⁻⁶.</p>
     </div>
-    <div class="mfg-step">
-      <div class="mfg-num">07</div>
-      <div class="mfg-content">
-        <h2 class="mfg-title">Distribution</h2>
-        <p class="mfg-text">AVIORA MedTech receives devices with complete batch documentation — manufacturing records, sterilisation cycle data and certificates of conformity. Incoming inspection is completed before stock is released. Lot traceability is maintained from the manufacturing partner through to the hospital. All records are retained for device shelf life plus a minimum of five years.</p>
+    <div class="q-row" style="">
+      <div class="q-label">
+        <span class="eyebrow">07</span>
+        <h2 class="q-title">Distribution</h2>
       </div>
-      
-    </div>
+      <p class="q-text">AVIORA receives devices with full batch documentation — manufacturing records, sterilisation cycle data and certificates of conformity. Lot traceability is maintained from manufacturer to hospital.</p>
     </div>
   </div>
 </section>
