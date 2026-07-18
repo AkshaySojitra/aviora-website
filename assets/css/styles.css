@@ -23,13 +23,18 @@
   
 }
 
-.hero-light{background:#fff;padding-top:72px;}
-.hero-light-img-wrap{width:100%;overflow:hidden;}
-.hero-light-img-wrap img{width:100%;height:auto;display:block;}
 .trust-light-strip{background:#fff;}
 .trust-strip-item--light span{color:var(--dark)!important;font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;}
 .trust-strip-item--light svg{color:var(--primary);}
 .site-header{background:rgba(255,255,255,0.97)!important;border-bottom:1px solid var(--line)!important;}
 .main-nav a{color:var(--dark)!important;}
 .mobile-toggle{border-color:var(--line-mid)!important;color:var(--dark)!important;}
+@media(max-width:600px){}
+
+.hero-light{background:#fff;padding-top:72px;}
+.hero-light-img-wrap{width:100%;}
+.hero-light-img-wrap img{width:100%;height:auto;display:block;}
+@media(max-width:860px){
+  div[style*="grid-template-columns:1fr 1fr"][style*="gap:48px"]{
+    grid-template-columns:1fr!important;gap:24px!important;}}
 @media(max-width:600px){.hero-light{padding-top:64px;}}
