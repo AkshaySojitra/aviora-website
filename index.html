@@ -241,37 +241,32 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 <main id="main-content">
 <!-- HERO -->
 <section class="hero-light">
+  <div class="wrap hero-split">
 
-  <!-- Full image — no crop, no scroll -->
-  <div class="hero-light-img-wrap">
-    <img src="assets/images/hero-bg-new.webp"
-         alt="AVIORA single-use surgical devices"
-         fetchpriority="high" loading="eager"
-         width="1200" height="800"
-         style="width:100%;height:auto;display:block;">
-  </div>
-
-  <!-- Text below image — clean white section -->
-  <div style="background:#fff;padding:48px 0 40px;border-bottom:1px solid var(--line);">
-    <div class="wrap">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
-        <div>
-          <span class="eyebrow">AVIORA MedTech</span>
-          <h1 style="margin-top:14px;font-size:clamp(28px,4vw,46px);color:var(--dark);">Single-use surgical devices for <span style="color:var(--primary);">safe, consistent surgery</span></h1>
-        </div>
-        <div>
-          <p style="font-size:16px;color:var(--mid);line-height:1.7;margin-bottom:24px;">Registered importer and distributor of single-use surgical devices in India. Sourced from ISO 13485 certified manufacturing partners with full lot documentation and technical support.</p>
-          <div style="display:flex;gap:14px;flex-wrap:wrap;">
-            <a href="products.html" class="btn btn-primary">View Products</a>
-            <a href="contact.html" class="btn btn-outline">Contact Us</a>
-          </div>
-        </div>
+    <!-- Left: text -->
+    <div class="hero-split-text">
+      <span class="eyebrow">AVIORA MedTech</span>
+      <h1 style="margin-top:16px;color:var(--dark);">Single-use surgical devices for <span style="color:var(--primary);">safe, consistent surgery</span></h1>
+      <p style="margin-top:20px;font-size:16px;color:var(--mid);line-height:1.7;max-width:460px;">Registered importer and distributor of single-use surgical devices in India. ISO 13485 certified manufacturing partners. Full lot documentation on every shipment.</p>
+      <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="products.html" class="btn btn-primary btn-lg">View Products</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
       </div>
     </div>
+
+    <!-- Right: product image -->
+    <div class="hero-split-img">
+      <img src="assets/images/hero-product.webp"
+           alt="AVIORA single-use surgical devices — trocar and linear cutter"
+           fetchpriority="high" loading="eager"
+           width="744" height="800"
+           style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+    </div>
+
   </div>
 
   <!-- Trust strip -->
-  <div class="trust-light-strip">
+  <div class="trust-light-strip" style="border-top:1px solid var(--line);">
     <div class="wrap" style="padding:0;">
       <div class="trust-strip-grid">
         <div class="trust-strip-item trust-strip-item--light">
@@ -293,7 +288,6 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
       </div>
     </div>
   </div>
-
 </section>
 
 <!-- WHY CHOOSE AVIORA -->
