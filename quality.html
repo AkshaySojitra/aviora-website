@@ -113,26 +113,144 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 
 <main>
 
-<section class="section" style="padding-top:156px;padding-bottom:56px;border-bottom:1px solid var(--line);"><div class="wrap"><span class="eyebrow">Quality &amp; Compliance</span><h1 style="margin-top:14px;max-width:760px;">Every device. Every batch. Fully documented.</h1><p style="margin-top:16px;font-size:16px;color:var(--mid);line-height:1.6;max-width:640px;">Our quality framework operates at every stage — from supplier qualification through to post-market surveillance.</p></div></section>
+<section class="section" style="padding-top:156px;padding-bottom:56px;border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <span class="eyebrow">Quality &amp; Compliance</span>
+    <h1 style="margin-top:14px;max-width:760px;">Every device. Every batch. Fully documented.</h1>
+    <p style="margin-top:16px;font-size:16px;color:var(--mid);line-height:1.6;max-width:640px;">Our quality framework operates at every stage — from supplier qualification through to post-market surveillance.</p>
+  </div>
+</section>
 
-<section class="section"><div class="wrap" style="display:flex;flex-direction:column;">
-<div style="display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-bottom:1px solid var(--line);"><div><span class="eyebrow">01</span><h2 style="margin-top:10px;font-size:19px;line-height:1.2;">Quality Philosophy</h2></div><p style="color:var(--mid);font-size:16px;line-height:1.7;max-width:580px;">We work exclusively with ISO 13485 certified manufacturers. If we cannot verify it, we do not supply it.</p></div>
-<div style="display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-bottom:1px solid var(--line);"><div><span class="eyebrow">02</span><h2 style="margin-top:10px;font-size:19px;line-height:1.2;">Incoming Inspection</h2></div><p style="color:var(--mid);font-size:16px;line-height:1.7;max-width:580px;">Every shipment is checked for packaging integrity, label compliance and lot documentation before entering stock. Batches that do not pass are quarantined and not released.</p></div>
-<div style="display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-bottom:1px solid var(--line);"><div><span class="eyebrow">03</span><h2 style="margin-top:10px;font-size:19px;line-height:1.2;">Manufacturing Control</h2></div><p style="color:var(--mid);font-size:16px;line-height:1.7;max-width:580px;">Partners operate under certified QMS with in-process inspection at critical control points. We conduct periodic audits to verify controls remain in place.</p></div>
-<div style="display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-bottom:1px solid var(--line);"><div><span class="eyebrow">04</span><h2 style="margin-top:10px;font-size:19px;line-height:1.2;">Product Validation</h2></div><p style="color:var(--mid);font-size:16px;line-height:1.7;max-width:580px;">Each device is validated through IQ, OQ and PQ protocols. Risk files are maintained per ISO 14971. Certificates of conformity are available for all product lines.</p></div>
-<div style="display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-bottom:1px solid var(--line);"><div><span class="eyebrow">05</span><h2 style="margin-top:10px;font-size:19px;line-height:1.2;">Sterility Assurance</h2></div><p style="color:var(--mid);font-size:16px;line-height:1.7;max-width:580px;">All devices are supplied sterile via EO or gamma irradiation, validated to SAL 10⁻⁶. Sterilisation cycle records are available per lot on request.</p></div>
-<div style="display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-bottom:1px solid var(--line);"><div><span class="eyebrow">06</span><h2 style="margin-top:10px;font-size:19px;line-height:1.2;">Traceability</h2></div><p style="color:var(--mid);font-size:16px;line-height:1.7;max-width:580px;">Every unit is linked to its manufacturing batch, sterilisation cycle and distribution record. Data is retained for shelf life plus five years.</p></div>
-<div style="display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;"><div><span class="eyebrow">07</span><h2 style="margin-top:10px;font-size:19px;line-height:1.2;">Continuous Improvement</h2></div><p style="color:var(--mid);font-size:16px;line-height:1.7;max-width:580px;">Complaints, field feedback and audit findings feed into a formal CAPA process. Supplier qualification is reviewed annually.</p></div>
-</div></section>
+<style>
+.q-row{display:grid;grid-template-columns:180px 1fr;gap:40px;padding:40px 0;align-items:start;}
+.q-title{margin-top:10px;font-size:19px;line-height:1.2;}
+.q-text{font-size:16px;color:var(--mid);line-height:1.7;max-width:580px;}
+@media(max-width:700px){
+  .q-row{grid-template-columns:1fr;gap:10px;padding:28px 0;}
+  .q-label{display:flex;align-items:center;gap:12px;}
+  .q-title{margin-top:0;font-size:17px;}
+  .q-text{font-size:15px;}
+  .cert-grid{grid-template-columns:1fr 1fr !important;}
+}
+@media(max-width:480px){
+  .cert-grid{grid-template-columns:1fr !important;}
+}
+</style>
 
-<section class="section section-alt"><div class="wrap"><div class="section-head"><span class="eyebrow">Certifications &amp; compliance</span><h2 style="margin-top:14px;">Documentation available on request.</h2></div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:880px;">
-<div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">ISO 13485</span><span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">Active</span></div><div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">Quality Management</div><div style="font-size:13px;color:var(--mid);">All manufacturing partners certified. QMS documentation available.</div></div>
-<div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">CE MARKING</span><span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">Select lines</span></div><div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">CE Documentation</div><div style="font-size:13px;color:var(--mid);">Technical files and Declaration of Conformity available per product.</div></div>
-<div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">CDSCO</span><span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">Active</span></div><div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">Importer Registration</div><div style="font-size:13px;color:var(--mid);">AVIORA MedTech is a CDSCO registered medical device importer.</div></div>
-<div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">FDA 510(k)</span><span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,142,216,0.12);color:var(--secondary);">Select lines</span></div><div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">FDA Clearance</div><div style="font-size:13px;color:var(--mid);">K-numbers confirmed per product line on request.</div></div>
-<div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">ISO 14971</span><span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">Active</span></div><div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">Risk Management</div><div style="font-size:13px;color:var(--mid);">Risk files maintained for all devices per ISO 14971.</div></div>
-<div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">LOT TRACING</span><span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">All products</span></div><div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">Full Traceability</div><div style="font-size:13px;color:var(--mid);">Lot and sterilisation records retained for every unit supplied.</div></div>
-</div></div></section>
+<section class="section">
+  <div class="wrap" style="display:flex;flex-direction:column;">
+    
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">01</span>
+        <h2 class="q-title">Quality Philosophy</h2>
+      </div>
+      <p class="q-text">We work exclusively with ISO 13485 certified manufacturers. If we cannot verify it, we do not supply it.</p>
+    </div>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">02</span>
+        <h2 class="q-title">Incoming Inspection</h2>
+      </div>
+      <p class="q-text">Every shipment is checked for packaging integrity, label compliance and lot documentation before entering stock. Batches that do not pass are quarantined and not released.</p>
+    </div>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">03</span>
+        <h2 class="q-title">Manufacturing Control</h2>
+      </div>
+      <p class="q-text">Partners operate under certified QMS with in-process inspection at critical control points. We conduct periodic audits to verify controls remain in place.</p>
+    </div>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">04</span>
+        <h2 class="q-title">Product Validation</h2>
+      </div>
+      <p class="q-text">Each device is validated through IQ, OQ and PQ protocols. Risk files are maintained per ISO 14971. Certificates of conformity are available for all product lines.</p>
+    </div>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">05</span>
+        <h2 class="q-title">Sterility Assurance</h2>
+      </div>
+      <p class="q-text">All devices are supplied sterile via EO or gamma irradiation, validated to SAL 10⁻⁶. Sterilisation cycle records are available per lot on request.</p>
+    </div>
+    <div class="q-row" style="border-bottom:1px solid var(--line);">
+      <div class="q-label">
+        <span class="eyebrow">06</span>
+        <h2 class="q-title">Traceability</h2>
+      </div>
+      <p class="q-text">Every unit is linked to its manufacturing batch, sterilisation cycle and distribution record. Data is retained for shelf life plus five years.</p>
+    </div>
+    <div class="q-row" style="">
+      <div class="q-label">
+        <span class="eyebrow">07</span>
+        <h2 class="q-title">Continuous Improvement</h2>
+      </div>
+      <p class="q-text">Complaints, field feedback and audit findings feed into a formal CAPA process. Supplier qualification is reviewed annually.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Certifications &amp; compliance</span>
+      <h2 style="margin-top:14px;">Documentation available on request.</h2>
+    </div>
+    <div class="cert-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:880px;">
+      
+      <div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">ISO 13485</span>
+          <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">Active</span>
+        </div>
+        <div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">Quality Management</div>
+        <div style="font-size:13px;color:var(--mid);">All manufacturing partners certified. QMS documentation available.</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">CE MARKING</span>
+          <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">Select lines</span>
+        </div>
+        <div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">CE Documentation</div>
+        <div style="font-size:13px;color:var(--mid);">Technical files and Declaration of Conformity available per product.</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">CDSCO</span>
+          <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">Active</span>
+        </div>
+        <div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">Importer Registration</div>
+        <div style="font-size:13px;color:var(--mid);">AVIORA MedTech is a CDSCO registered medical device importer.</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">FDA 510(k)</span>
+          <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,142,216,0.12);color:var(--secondary);">Select lines</span>
+        </div>
+        <div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">FDA Clearance</div>
+        <div style="font-size:13px;color:var(--mid);">K-numbers confirmed per product line on request.</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">ISO 14971</span>
+          <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">Active</span>
+        </div>
+        <div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">Risk Management</div>
+        <div style="font-size:13px;color:var(--mid);">Risk files maintained for all devices per ISO 14971.</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--secondary);">LOT TRACING</span>
+          <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(0,196,140,0.12);color:#00875f;">All products</span>
+        </div>
+        <div style="font-size:14px;font-weight:600;color:var(--dark);margin-bottom:4px;">Full Traceability</div>
+        <div style="font-size:13px;color:var(--mid);">Lot and sterilisation records retained for every unit supplied.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </main>
 <footer class="site-footer" role="contentinfo">
