@@ -93,11 +93,14 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
     </div>
   </header>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="wrap nav-row" style="height:72px;">
-      <span class="logo"><img src="assets/images/logo-transparent.webp" alt="Aviora Medtech" class="logo-img" width="480" height="108"></span>
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mm-head">
+      <img src="assets/images/logo-transparent.webp" alt="AVIORA MedTech" style="height:42px;" loading="lazy" width="480" height="108">
+      <button class="mm-close" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
     </div>
-    <nav class="wrap" aria-label="Mobile" style="display:flex;flex-direction:column;">
+    <nav aria-label="Mobile navigation">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="quality.html">Quality</a>
@@ -107,7 +110,6 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
       <a href="contact.html">Contact</a>
     </nav>
   </div>
-
 
 <main>
 
