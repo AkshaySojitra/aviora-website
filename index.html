@@ -30,13 +30,7 @@
 <noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript></noscript>
 
 <style>
-.hero-text-block { margin-bottom: 20px; }
-@media (min-width: 860px) {
-  .hero-text-block {
-    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
-  }
-}
+.hero-text-block { margin-bottom: 24px; max-width: 640px; }
 .hero-visual { display: block !important; opacity: 1 !important; transform: none !important; }
 @media (max-width: 959px) {
   .hero-visual { display: block !important; }
@@ -128,23 +122,19 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 <!-- HERO -->
 <section class="hero-light">
   <div class="wrap">
-    <!-- Heading: real, readable text on mobile; visually hidden on desktop (image already contains it) -->
     <div class="hero-text-block">
       <span class="eyebrow">AVIORA MedTech</span>
-      <h1 style="margin-top:14px;color:var(--dark);">Single-use surgical devices for <span style="color:var(--primary);">safe, consistent surgery</span></h1>
-      <p style="margin-top:14px;font-size:15px;color:var(--mid);line-height:1.65;">Registered importer and distributor of single-use surgical devices in India. ISO 13485 certified manufacturing partners. Full lot documentation on every shipment.</p>
+      <h1 style="margin-top:14px;color:var(--dark);">Precision <span style="color:var(--primary);">Single-Use Surgical Devices</span></h1>
+      <p style="margin-top:14px;font-size:15px;color:var(--mid);line-height:1.65;">Designed and manufactured for reliable clinical performance in open and minimally invasive surgical procedures.</p>
     </div>
 
-    <!-- Hero image: product-only crop on mobile (paired with readable text above), full combined image on desktop -->
+    <!-- Hero image: product graphic only -->
     <div style="width:100%;overflow:hidden;border-radius:12px;">
-      <picture>
-        <source media="(max-width:859px)" srcset="assets/images/hero-product-mobile.webp">
-        <img src="assets/images/hero-product.webp"
-             alt="AVIORA MedTech — single-use surgical devices for safe, consistent surgery. Registered importer and distributor of single-use surgical devices in India, ISO 13485 certified manufacturing partners."
-             fetchpriority="high" loading="eager"
-             width="1672" height="941"
-             style="width:100%;height:auto;display:block;">
-      </picture>
+      <img src="assets/images/hero-product.webp"
+           alt="AVIORA MedTech single-use surgical devices — trocar, skin stapler, scissors, linear cutter, and ligation clip applier"
+           fetchpriority="high" loading="eager"
+           width="926" height="702"
+           style="width:100%;height:auto;display:block;">
     </div>
   </div>
 </section>
