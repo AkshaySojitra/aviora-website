@@ -50,6 +50,26 @@ h1,h2,h3,h4,h5{font-family:'Inter',sans-serif;color:#0F172A;letter-spacing:-0.02
 h1{font-size:clamp(32px,5vw,58px)}
 @media(min-width:1000px){.main-nav{display:flex}.mobile-toggle{display:none}}
 @media(min-width:960px){.hero-inner{grid-template-columns:1.1fr 1.35fr}}
+
+/* AVIORA 2026 consistency pass */
+:root{--primary:#005BAC;--primary-2:#007FC4;--dark:#0F172A;--mid:#475569;--muted:#64748B;--line:#E2E8F0;--surface:#FFFFFF;--surface-alt:#F8FAFC;}
+html{font-size:16px;}
+body{font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--dark);background:var(--surface-alt);font-size:16px;line-height:1.65;}
+h1,h2,h3,h4,h5{font-family:'Inter',system-ui,sans-serif;color:var(--dark);font-weight:700;letter-spacing:-.025em;}
+h1{font-size:clamp(38px,4.5vw,58px);line-height:1.05;}
+h2{font-size:clamp(28px,3.2vw,42px);line-height:1.12;}
+h3{font-size:20px;line-height:1.25;}
+p{line-height:1.7;}
+.eyebrow,.av-kicker{font-family:'Inter',system-ui,sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);}
+.main-nav a{font-family:'Inter',system-ui,sans-serif;font-size:15px;font-weight:500;}
+.site-header .wrap{min-height:82px;}
+.site-logo img,.header-logo-img{height:48px!important;width:auto!important;}
+.btn{font-family:'Inter',system-ui,sans-serif;font-size:14.5px;font-weight:600;}
+.card p,.feature-card p{color:var(--mid);}
+.page-hero-new p{font-size:17px;line-height:1.7;color:var(--mid);max-width:760px;}
+.footer-tagline{line-height:1.65;}
+@media(max-width:768px){.site-header .wrap{min-height:72px}.site-logo img,.header-logo-img{height:40px!important}h1{font-size:clamp(34px,10vw,46px)}}
+
 </style>
 <style>
 @font-face {
@@ -94,103 +114,12 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 </nav>
 <a href="index.html">Home</a><a href="services.html">Services</a><a href="products.html">Medical Technology</a><a href="quality.html">Quality</a><a href="manufacturing.html">Manufacturing</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
 <main id="main-content">
-<!-- PAGE HERO -->
-<section class="section" style="padding-top:156px;padding-bottom:56px;border-bottom:1px solid var(--line);">
-<div class="wrap">
-<span class="eyebrow">About AVIORA</span>
-<h1 style="margin-top:14px;max-width:760px;">Single-use surgical devices for hospitals and surgical centres across India.</h1>
-<p style="margin-top:16px;font-size:16px;color:var(--mid);line-height:1.6;max-width:640px;">AVIORA MedTech is a CDSCO registered importer and distributor of single-use surgical devices. We source from ISO 13485 certified manufacturing partners and supply with full lot documentation and technical support.</p>
-</div>
-</section>
-<!-- WHAT YOU RECEIVE + POSITION -->
-<section class="section section-alt">
-<div class="wrap">
-<div class="r2" style="gap:64px;align-items:start;">
-<div>
-<span class="eyebrow">What you receive</span>
-<h2 style="margin-top:14px;">Products backed by documentation, not just packaging.</h2>
-<div style="margin-top:24px;display:flex;flex-direction:column;">
-<div style="display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);">
-<svg fill="none" height="14" style="margin-top:3px;flex-shrink:0;" viewbox="0 0 24 24" width="14"><path d="M20 6 9 17l-5-5" stroke="var(--primary)" stroke-linecap="round" stroke-width="2.2"></path></svg>
-<div><div style="font-size:14px;font-weight:600;color:var(--dark);">ISO 13485 certified manufacturing</div><div style="font-size:13px;color:var(--mid);margin-top:2px;">All partners operate under a certified quality management system.</div></div>
-</div>
-<div style="display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);">
-<svg fill="none" height="14" style="margin-top:3px;flex-shrink:0;" viewbox="0 0 24 24" width="14"><path d="M20 6 9 17l-5-5" stroke="var(--primary)" stroke-linecap="round" stroke-width="2.2"></path></svg>
-<div><div style="font-size:14px;font-weight:600;color:var(--dark);">CE documentation on request</div><div style="font-size:13px;color:var(--mid);margin-top:2px;">Technical files and Declaration of Conformity for applicable lines.</div></div>
-</div>
-<div style="display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);">
-<svg fill="none" height="14" style="margin-top:3px;flex-shrink:0;" viewbox="0 0 24 24" width="14"><path d="M20 6 9 17l-5-5" stroke="var(--primary)" stroke-linecap="round" stroke-width="2.2"></path></svg>
-<div><div style="font-size:14px;font-weight:600;color:var(--dark);">Full lot traceability</div><div style="font-size:13px;color:var(--mid);margin-top:2px;">Every unit linked to its batch, sterilisation cycle and distribution record.</div></div>
-</div>
-<div style="display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);">
-<svg fill="none" height="14" style="margin-top:3px;flex-shrink:0;" viewbox="0 0 24 24" width="14"><path d="M20 6 9 17l-5-5" stroke="var(--primary)" stroke-linecap="round" stroke-width="2.2"></path></svg>
-<div><div style="font-size:14px;font-weight:600;color:var(--dark);">EO sterilised, SAL 10⁻⁶</div><div style="font-size:13px;color:var(--mid);margin-top:2px;">Validated sterilisation with cycle records retained per lot.</div></div>
-</div>
-<div style="display:flex;align-items:flex-start;gap:12px;padding:13px 0;">
-<svg fill="none" height="14" style="margin-top:3px;flex-shrink:0;" viewbox="0 0 24 24" width="14"><path d="M20 6 9 17l-5-5" stroke="var(--primary)" stroke-linecap="round" stroke-width="2.2"></path></svg>
-<div><div style="font-size:14px;font-weight:600;color:var(--dark);">Technical and clinical support</div><div style="font-size:13px;color:var(--mid);margin-top:2px;">Application specialists for first cases, training and product queries.</div></div>
-</div>
-</div>
-</div>
-<div>
-<span class="eyebrow">Our position</span>
-<h2 style="margin-top:14px;">Registered importer. Not a trader.</h2>
-<p style="margin-top:16px;font-size:15px;color:var(--mid);line-height:1.7;">Every product we supply has been qualified against a defined specification, sourced from an audited manufacturer, and cleared through incoming inspection before it enters stock.</p>
-<p style="margin-top:12px;font-size:15px;color:var(--mid);line-height:1.7;">We do not list products we cannot support with documentation. If we cannot provide the CE file, ISO certificate or sterilisation record — we do not supply the product.</p>
-<div style="margin-top:24px;display:flex;flex-direction:column;gap:8px;">
-<div style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary);margin-bottom:4px;">Documentation available</div>
-<div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--dark);"><svg fill="none" height="12" viewbox="0 0 24 24" width="12"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-linecap="round" stroke-width="2.5"></path></svg>ISO 13485 certificates</div>
-<div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--dark);"><svg fill="none" height="12" viewbox="0 0 24 24" width="12"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-linecap="round" stroke-width="2.5"></path></svg>CE technical files</div>
-<div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--dark);"><svg fill="none" height="12" viewbox="0 0 24 24" width="12"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-linecap="round" stroke-width="2.5"></path></svg>Sterilisation cycle records</div>
-<div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--dark);"><svg fill="none" height="12" viewbox="0 0 24 24" width="12"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-linecap="round" stroke-width="2.5"></path></svg>Certificates of conformity</div>
-<div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--dark);"><svg fill="none" height="12" viewbox="0 0 24 24" width="12"><path d="M20 6 9 17l-5-5" stroke="var(--green)" stroke-linecap="round" stroke-width="2.5"></path></svg>Lot traceability records</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- VISION + MISSION -->
-<section class="section">
-<div class="wrap">
-<div class="r2" style="gap:56px;">
-<div>
-<span class="eyebrow">Vision</span>
-<p style="margin-top:14px;font-size:17px;color:var(--dark);line-height:1.65;">To improve surgical care through verifiable, well-documented devices that clinicians can trust.</p>
-</div>
-<div>
-<span class="eyebrow">Mission</span>
-<p style="margin-top:14px;font-size:17px;color:var(--dark);line-height:1.65;">To source, qualify and supply single-use surgical devices with full documentation and local technical support.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- VALUES -->
-<section class="section section-alt">
-<div class="wrap">
-<div class="section-head reveal">
-<span class="eyebrow">Core values</span>
-<h2 style="margin-top:14px;">What we hold ourselves to.</h2>
-</div>
-<div class="grid g4" style="gap:16px;">
-<div class="card" style="padding:24px;">
-<h3 style="font-size:15px;margin-bottom:8px;">Quality</h3>
-<p style="font-size:13.5px;color:var(--mid);">ISO 13485 partners only. Every batch documented, inspected and traceable before release.</p>
-</div>
-<div class="card" style="padding:24px;">
-<h3 style="font-size:15px;margin-bottom:8px;">Integrity</h3>
-<p style="font-size:13.5px;color:var(--mid);">We supply only what we have qualified. No shortcuts on documentation or compliance.</p>
-</div>
-<div class="card" style="padding:24px;">
-<h3 style="font-size:15px;margin-bottom:8px;">Reliability</h3>
-<p style="font-size:13.5px;color:var(--mid);">Consistent supply, consistent quality, consistent documentation — every order.</p>
-</div>
-<div class="card" style="padding:24px;">
-<h3 style="font-size:15px;margin-bottom:8px;">Partnership</h3>
-<p style="font-size:13.5px;color:var(--mid);">Long-term relationships with distributors and hospitals, not just individual orders.</p>
-</div>
-</div>
-</div>
-</section>
+<section class="page-hero-new"><div class="wrap"><span class="eyebrow">About AVIORA</span><h1>Building a broader medical technology platform.</h1><p>AVIORA MedTech brings together medical technology, AI-enabled healthcare software and regulatory support to help healthcare products progress from concept toward market readiness.</p></div></section>
+<section class="section"><div class="wrap"><div class="r2" style="gap:64px;align-items:start;"><div><span class="eyebrow">Who we are</span><h2 style="margin-top:14px;">Focused on the complete product journey.</h2><p style="margin-top:18px;color:var(--mid);">AVIORA MedTech LLP is an India-based medical technology company. Our activities span medical devices, AI &amp; Software as a Medical Device (SaMD), and regulatory &amp; compliance services.</p><p style="margin-top:14px;color:var(--mid);">We are building AVIORA around a practical principle: product development, quality and regulatory strategy should work together from the beginning. This integrated approach helps create clearer development pathways and stronger documentation as technologies move toward commercialization.</p></div><div class="card" style="padding:34px;"><span class="eyebrow">Our focus</span><div style="display:grid;gap:22px;margin-top:24px;"><div><h3>Medical Technology</h3><p style="margin-top:7px;color:var(--mid);">Product development, engineering collaboration, manufacturing readiness and selected medical device solutions.</p></div><div style="border-top:1px solid var(--line);padding-top:22px;"><h3>AI &amp; SaMD</h3><p style="margin-top:7px;color:var(--mid);">Healthcare software and AI-enabled solutions developed with clinical use, software quality, risk and validation in view.</p></div><div style="border-top:1px solid var(--line);padding-top:22px;"><h3>Regulatory &amp; Compliance</h3><p style="margin-top:7px;color:var(--mid);">Regulatory strategy, technical documentation, risk management and compliance support across the product lifecycle.</p></div></div></div></div></div></section>
+<section class="section section-alt"><div class="wrap"><div class="section-head"><span class="eyebrow">How we work</span><h2 style="margin-top:14px;">Connected thinking across development and compliance.</h2><p style="margin-top:14px;color:var(--mid);max-width:760px;">Our approach is structured around the requirements that determine whether a healthcare technology can move forward: intended use, product requirements, risk, evidence, quality, usability, software lifecycle considerations and the applicable regulatory pathway.</p></div><div class="grid g4" style="gap:18px;margin-top:34px;"><article class="card" style="padding:26px;"><span class="eyebrow">01</span><h3 style="margin-top:12px;">Understand</h3><p style="margin-top:9px;color:var(--mid);">Define the healthcare need, intended use, users and development objectives.</p></article><article class="card" style="padding:26px;"><span class="eyebrow">02</span><h3 style="margin-top:12px;">Plan</h3><p style="margin-top:9px;color:var(--mid);">Align product, quality and regulatory requirements before execution.</p></article><article class="card" style="padding:26px;"><span class="eyebrow">03</span><h3 style="margin-top:12px;">Develop</h3><p style="margin-top:9px;color:var(--mid);">Build the technology and supporting documentation with traceability in mind.</p></article><article class="card" style="padding:26px;"><span class="eyebrow">04</span><h3 style="margin-top:12px;">Prepare for Market</h3><p style="margin-top:9px;color:var(--mid);">Support validation, compliance documentation and market-readiness activities.</p></article></div></div></section>
+<section class="section"><div class="wrap"><div class="r2" style="gap:56px;"><div><span class="eyebrow">Vision</span><h2 style="margin-top:14px;">Technology that advances healthcare.</h2><p style="margin-top:14px;color:var(--mid);">To build AVIORA into a trusted medical technology platform that connects product innovation, intelligent software and regulatory expertise.</p></div><div><span class="eyebrow">Mission</span><h2 style="margin-top:14px;">From idea to market readiness.</h2><p style="margin-top:14px;color:var(--mid);">To help develop and support healthcare technologies through disciplined product development, quality-focused execution and regulatory planning.</p></div></div></div></section>
+<section class="section section-alt"><div class="wrap"><div class="section-head"><span class="eyebrow">Principles</span><h2 style="margin-top:14px;">What guides our work.</h2></div><div class="grid g4" style="gap:18px;margin-top:32px;"><article class="card" style="padding:26px;"><h3>Quality</h3><p style="margin-top:9px;color:var(--mid);">Build quality considerations into decisions, documentation and development activities.</p></article><article class="card" style="padding:26px;"><h3>Integrity</h3><p style="margin-top:9px;color:var(--mid);">Communicate clearly about scope, evidence, requirements and limitations.</p></article><article class="card" style="padding:26px;"><h3>Collaboration</h3><p style="margin-top:9px;color:var(--mid);">Connect technical, clinical, quality and regulatory perspectives around a shared objective.</p></article><article class="card" style="padding:26px;"><h3>Practical Innovation</h3><p style="margin-top:9px;color:var(--mid);">Focus innovation on real healthcare needs and viable paths to implementation.</p></article></div></div></section>
+<section class="section"><div class="wrap"><div class="cta-home"><div><span class="eyebrow">Work with AVIORA</span><h2 style="margin-top:14px;">Discuss your medical technology project.</h2><p>Tell us what you are developing and where you are in the product lifecycle.</p></div><a class="btn btn-primary btn-lg" href="contact.html">Start a Conversation →</a></div></div></section>
 </main>
 <footer class="site-footer" role="contentinfo">
 <div class="wrap">
@@ -199,11 +128,11 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 <div class="footer-logo">
 <img alt="AVIORA MedTech" class="footer-logo-img" height="108" loading="lazy" src="assets/images/logo-aviora-medtech.png" style="width:auto;height:32px;" width="501"/>
 </div>
-<p class="footer-tagline">Surgical devices for surgical care — sourced from ISO 13485 certified manufacturing partners, supplied across India.</p>
+<p class="footer-tagline">Medical technology, AI-enabled healthcare solutions and regulatory expertise — from concept to market.</p>
 <div class="social-row" style="margin-top:20px;">
 <a aria-label="LinkedIn" class="social-link" href="#"><svg fill="currentColor" height="15" viewbox="0 0 24 24" width="15"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"></path></svg></a>
 <a aria-label="YouTube" class="social-link" href="#"><svg fill="currentColor" height="15" viewbox="0 0 24 24" width="15"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"></path></svg></a>
-<a aria-label="WhatsApp" class="social-link" href="https://wa.me/917984880645"><svg fill="currentColor" height="15" viewbox="0 0 24 24" width="15"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"></path></svg></a>
+<a aria-label="WhatsApp" class="social-link" href="https://wa.me/919099721011"><svg fill="currentColor" height="15" viewbox="0 0 24 24" width="15"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"></path></svg></a>
 </div>
 </div>
 <div class="footer-col">
@@ -224,9 +153,9 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 <div class="footer-col">
 <h4>Contact</h4>
 <a href="mailto:info@avioramedtech.com">info@avioramedtech.com</a>
-<a href="tel:+917984880645">+91 79848 80645</a>
-<a href="https://wa.me/917984880645">WhatsApp Chat</a>
-<a href="contact.html" style="font-size:12px;margin-top:6px;color:rgba(255,255,255,0.35);">Plot 14, MediTech Industrial Park, Vadodara, Gujarat, India 391740</a>
+<a href="tel:+919099721011">+91 9099721011</a>
+<a href="https://wa.me/919099721011">WhatsApp Chat</a>
+<a href="contact.html" style="font-size:12px;margin-top:6px;color:rgba(255,255,255,0.35);">FF 4, 9 Sequar, Sama Savli Road, Vadodara 390023, Gujarat, India</a>
 </div>
 </div>
 </div>
@@ -238,7 +167,7 @@ body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Sego
 </div>
 </footer>
 <!-- WhatsApp float -->
-<a aria-label="Chat on WhatsApp" class="wa-float" href="https://wa.me/917984880645" rel="noopener" target="_blank">
+<a aria-label="Chat on WhatsApp" class="wa-float" href="https://wa.me/919099721011" rel="noopener" target="_blank">
 <svg fill="currentColor" height="26" viewbox="0 0 24 24" width="26"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"></path></svg>
 </a>
 <!-- Sticky mobile CTA --><script defer="" src="assets/js/main.js"></script>
