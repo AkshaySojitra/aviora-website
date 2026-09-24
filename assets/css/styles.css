@@ -112,10 +112,10 @@ button{font-family:inherit;cursor:pointer;border:none;}
 .site-header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background var(--transition),border-color var(--transition),backdrop-filter var(--transition),transform 0.3s ease;border-bottom:1px solid transparent;}
 .site-header.is-hidden{transform:translateY(-100%);}
 .site-header.is-solid{background:rgba(248,250,252,0.94);backdrop-filter:blur(12px);border-bottom-color:var(--line);}
-.nav-row{display:flex;align-items:center;justify-content:space-between;height:88px;}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:82px;}
 .logo{display:flex;align-items:center;gap:12px;}
-.logo-img{height:46px;width:auto;display:block;}
-@media (min-width:960px){.logo-img{height:54px;}}
+.logo-img{height:42px;width:auto;display:block;}
+@media (min-width:960px){.logo-img{height:48px;}}
 .main-nav{display:none;align-items:center;gap:28px;}
 @media (min-width:1000px){.main-nav{display:flex;}}
 .main-nav a{font-size:15px;font-weight:500;color:var(--dark);padding:6px 0;position:relative;}
