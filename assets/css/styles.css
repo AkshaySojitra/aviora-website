@@ -398,3 +398,14 @@ div[style*="position:sticky;top:100px"]{position:static!important;}
   .btn-lg{font-size:14.5px}
   .page-hero-new{padding-top:98px}
 }
+
+/* Mobile/tablet navigation hardening — 2026-09-25 */
+@media (max-width:999px){
+  .site-header .main-nav{display:none!important}
+  .site-header .mobile-toggle{display:flex!important}
+  .mobile-menu>nav{display:flex;flex-direction:column;width:100%}
+  .mobile-menu>nav>a{width:100%}
+}
+@media (min-width:1000px){
+  .mobile-menu{display:none!important}
+}
