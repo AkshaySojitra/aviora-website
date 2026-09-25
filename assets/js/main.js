@@ -37,12 +37,13 @@
   var openBtn = document.querySelector('.mobile-toggle');
   var closeBtn = document.querySelector('.mm-close');
   var mobileMenu = document.querySelector('.mobile-menu');
-  function openMenu() { mobileMenu.classList.add('is-open'); document.body.style.overflow = 'hidden'; }
-  function closeMenu() { mobileMenu.classList.remove('is-open'); document.body.style.overflow = ''; }
+  function openMenu() { if (!mobileMenu) return; mobileMenu.classList.add('is-open'); document.body.style.overflow = 'hidden'; if (openBtn) openBtn.setAttribute('aria-expanded','true'); }
+  function closeMenu() { if (!mobileMenu) return; mobileMenu.classList.remove('is-open'); document.body.style.overflow = ''; if (openBtn) openBtn.setAttribute('aria-expanded','false'); }
   if (openBtn && mobileMenu) {
     openBtn.addEventListener('click', openMenu);
     if (closeBtn) closeBtn.addEventListener('click', closeMenu);
     mobileMenu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) { closeMenu(); openBtn.focus(); } });
   }
 
   /* ── Accordion ────────────────────────────────────────────── */
