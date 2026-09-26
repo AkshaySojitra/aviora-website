@@ -1,0 +1,38 @@
+# AVIORA MedTech — Cache headers for GitHub Pages / Cloudflare
+
+# HTML pages — short cache, always revalidate
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# CSS — 1 year (filename changes on update)
+/assets/css/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# JavaScript — 1 year
+/assets/js/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images — 1 year
+/assets/images/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/products/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/products/*.png
+  Cache-Control: public, max-age=31536000, immutable

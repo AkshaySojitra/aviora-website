@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | AVIORA MedTech</title>
+<meta content="Contact AVIORA MedTech for medical technology, AI &amp; SaMD, regulatory and general business enquiries." name="description"/>
+<link href="https://www.avioramedtech.com/contact.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Contact Us | AVIORA MedTech" property="og:title"/>
+<meta content="Contact AVIORA MedTech for medical technology, AI &amp; SaMD, regulatory and general business enquiries." property="og:description"/>
+<meta content="https://www.avioramedtech.com/contact.html" property="og:url"/>
+<meta content="AVIORA MedTech" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Contact Us | AVIORA MedTech" name="twitter:title"/>
+<meta content="Contact AVIORA MedTech for medical technology, AI &amp; SaMD, regulatory and general business enquiries." name="twitter:description"/>
+<link href="assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/images/favicon.png" rel="icon" sizes="512x512" type="image/png"/>
+<link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=optional" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=optional" rel="stylesheet"/></noscript>
+<link as="style" href="assets/css/styles.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<noscript><link as="style" href="assets/css/styles.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<noscript><link href="assets/css/styles.css" rel="stylesheet"/></noscript></noscript>
+<style>
+/* Contact page overrides */
+.contact-grid { display: grid; grid-template-columns: 340px 1fr; gap: 48px; align-items: start; }
+@media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+
+.contact-info-item {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px 0; border-bottom: 1px solid var(--line);
+  text-decoration: none; color: inherit;
+}
+.contact-info-item:last-child { border-bottom: none; }
+.contact-info-icon {
+  width: 38px; height: 38px; border-radius: 8px;
+  background: rgba(0,91,172,0.07);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.contact-info-label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--mid); margin-bottom: 3px;
+}
+.contact-info-value { font-size: 14.5px; font-weight: 500; color: var(--dark); }
+.contact-info-sub { font-size: 13px; color: var(--mid); margin-top: 2px; }
+
+.form-card {
+  background: var(--white); border: 1px solid var(--line);
+  border-radius: 12px; padding: 32px;
+  margin-bottom: 24px;
+}
+.form-card:last-child { margin-bottom: 0; }
+.form-card-title { font-size: 17px; font-weight: 700; color: var(--dark); margin-top: 10px; }
+.form-card-desc { font-size: 13.5px; color: var(--mid); margin-top: 6px; line-height: 1.5; }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 13px; font-weight: 600; color: var(--dark); }
+.field input, .field select, .field textarea {
+  border: 1.5px solid var(--line-mid); border-radius: 8px;
+  padding: 11px 14px; font-family: inherit; font-size: 14px;
+  background: var(--bg); color: var(--dark); width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  border-color: var(--primary); outline: none;
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(0,91,172,0.1);
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+.form-fields { display: flex; flex-direction: column; gap: 14px; margin-top: 20px; }
+.form-success-msg {
+  display: none; margin-top: 12px; padding: 12px 16px;
+  background: rgba(0,196,140,0.08); border: 1px solid rgba(0,196,140,0.2);
+  border-radius: 8px; color: #00875f; font-size: 14px; font-weight: 600;
+}
+.response-note {
+  margin-top: 20px; padding: 14px 16px;
+  background: rgba(0,91,172,0.04); border: 1px solid rgba(0,91,172,0.1);
+  border-radius: 8px; font-size: 13.5px; color: var(--mid); line-height: 1.5;
+}
+
+/* AVIORA 2026 consistency pass */
+:root{--primary:#005BAC;--primary-2:#007FC4;--dark:#0F172A;--mid:#475569;--muted:#64748B;--line:#E2E8F0;--surface:#FFFFFF;--surface-alt:#F8FAFC;}
+html{font-size:16px;}
+body{font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--dark);background:var(--surface-alt);font-size:16px;line-height:1.65;}
+h1,h2,h3,h4,h5{font-family:'Inter',system-ui,sans-serif;color:var(--dark);font-weight:700;letter-spacing:-.025em;}
+h1{font-size:clamp(38px,4.5vw,58px);line-height:1.05;}
+h2{font-size:clamp(28px,3.2vw,42px);line-height:1.12;}
+h3{font-size:20px;line-height:1.25;}
+p{line-height:1.7;}
+.eyebrow,.av-kicker{font-family:'Inter',system-ui,sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);}
+.main-nav a{font-family:'Inter',system-ui,sans-serif;font-size:15px;font-weight:500;}
+.site-header .wrap{min-height:82px;}
+.site-logo img,.header-logo-img{height:48px!important;width:auto!important;}
+.btn{font-family:'Inter',system-ui,sans-serif;font-size:14.5px;font-weight:600;}
+.card p,.feature-card p{color:var(--mid);}
+.page-hero-new p{font-size:17px;line-height:1.7;color:var(--mid);max-width:760px;}
+.footer-tagline{line-height:1.65;}
+@media(max-width:768px){.site-header .wrap{min-height:72px}.site-logo img,.header-logo-img{height:40px!important}h1{font-size:clamp(34px,10vw,46px)}}
+
+</style>
+<style>
+/* ── Contact page ────────────────────────────────────────── */
+.contact-layout { display:grid; grid-template-columns:300px 1fr; gap:56px; align-items:start; }
+@media(max-width:900px){ .contact-layout{ grid-template-columns:1fr; gap:40px; } }
+
+.contact-detail { display:flex; align-items:flex-start; gap:14px; padding:16px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+.contact-detail:last-of-type{ border-bottom:none; }
+.contact-detail-icon{ width:44px; height:44px; border-radius:10px; background:rgba(0,91,172,0.07); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.contact-detail-label{ font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#94A3B8; margin-bottom:3px; font-family:Inter,Arial,sans-serif; }
+.contact-detail-value{ font-size:14px; font-weight:500; color:var(--dark); }
+.contact-detail-sub{ font-size:12.5px; color:var(--mid); margin-top:2px; }
+
+/* Tabs */
+.enquiry-tabs { display:flex; gap:0; border:1px solid var(--line); border-radius:10px; overflow:hidden; margin-bottom:28px; background:var(--bg); width:100%; }
+.enquiry-tab {
+  flex:1; min-width:0; padding:13px 8px; font-size:13px; font-weight:600;
+  text-align:center; cursor:pointer; border:none; background:transparent;
+  color:var(--mid); transition:all 0.18s; position:relative;
+  border-right:1px solid var(--line); overflow:hidden; white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.enquiry-tab:last-child{ border-right:none; }
+.enquiry-tab.active{
+  background:var(--white); color:var(--primary);
+  box-shadow:0 1px 4px rgba(0,0,0,0.07);
+}
+.enquiry-tab .tab-badge{
+  display:inline-block; margin-left:6px; padding:2px 7px;
+  border-radius:100px; font-size:10px; font-weight:700;
+  background:rgba(0,91,172,0.12); color:var(--primary);
+  vertical-align:middle;
+}
+@media(max-width:480px){.enquiry-tab .tab-badge{display:none;}
+.enquiry-tab{font-size:12.5px;padding:12px 6px;}}
+.enquiry-tab.active .tab-badge{ background:var(--primary); color:#fff; }
+
+/* Form panels */
+.form-panel{ display:none; }
+.form-panel.active{ display:block; }
+.form-panel-header{ margin-bottom:24px; }
+.form-panel-title{ font-size:18px; font-weight:700; color:var(--dark); }
+.form-panel-desc{ font-size:14px; color:var(--mid); margin-top:6px; line-height:1.5; }
+
+/* Fields */
+.f-field{ display:flex; flex-direction:column; gap:6px; }
+.f-field label{ font-size:13px; font-weight:600; color:var(--dark); }
+.f-field input,.f-field select,.f-field textarea{
+  border:1.5px solid var(--line-mid); border-radius:8px;
+  padding:11px 14px; font-family:inherit; font-size:14px;
+  background:var(--bg); color:var(--dark); width:100%;
+  transition:border-color 0.18s, box-shadow 0.18s;
+}
+.f-field input:focus,.f-field select:focus,.f-field textarea:focus{
+  border-color:var(--primary); outline:none; background:var(--white);
+  box-shadow:0 0 0 3px rgba(0,91,172,0.1);
+}
+.f-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+@media(max-width:600px){ .f-row{ grid-template-columns:1fr; } }
+.f-stack{ display:flex; flex-direction:column; gap:14px; }
+.f-success{
+  display:none; margin-top:14px; padding:13px 16px;
+  background:rgba(0,196,140,0.08); border:1px solid rgba(0,196,140,0.2);
+  border-radius:8px; font-size:14px; font-weight:600; color:#00875f;
+}
+.form-wrap{
+  background:var(--white); border:1px solid var(--line);
+  border-radius:12px; padding:32px;
+}
+</style>
+<style>
+/* Critical CSS — prevents FOUC while styles.css loads async */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px}
+body{font-family:'Inter',system-ui,sans-serif;color:#0F172A;background:#F8FAFC;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+:root{--primary:#005BAC;--secondary:#008ED8;--dark:#0F172A;--mid:#475569;--line:rgba(15,23,42,0.09);--bg:#F8FAFC;--white:#ffffff;--radius:10px;--container:1260px}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 24px}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;display:flex;align-items:center;transition:background 0.3s,box-shadow 0.3s}
+.nav-row{display:flex;align-items:center;justify-content:space-between;width:100%;height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-img{height:44px;width:auto;display:block}
+.main-nav{display:none;align-items:center;gap:32px;list-style:none}
+.main-nav a{font-size:15px;font-weight:500;color:#0F172A;text-decoration:none}
+.mobile-toggle{background:none;border:none;cursor:pointer;padding:8px;color:#0F172A}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;font-weight:600;font-size:14.5px;cursor:pointer;border:1.5px solid transparent;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s,filter 0.2s}
+.btn-primary{background:#005BAC;color:#fff}
+.btn-gradient{background:linear-gradient(135deg,#4F46E5,#7C3AED,#EC4899);color:#fff}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity 0.55s ease,transform 0.55s ease}
+.reveal.is-visible{opacity:1;transform:none}
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;background:#060E1A;overflow:hidden}
+.hero-inner{display:grid;gap:28px;align-items:center;padding-top:120px;padding-bottom:48px}
+h1,h2,h3,h4,h5{font-family:'Inter',sans-serif;color:#0F172A;letter-spacing:-0.025em;line-height:1.05;font-weight:700}
+h1{font-size:clamp(32px,5vw,58px)}
+@media(min-width:1000px){.main-nav{display:flex}.mobile-toggle{display:none}}
+@media(min-width:960px){.hero-inner{grid-template-columns:1.1fr 1.35fr}}
+</style>
+<style>
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: optional;
+  src: local('Inter'), local('Inter-Regular');
+  size-adjust: 100%;
+}
+body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+</style>
+<style>
+/* Keep primary page titles on one line on wide desktop screens; allow natural wrapping on tablet/mobile. */
+.page-title-single{max-width:none!important;font-size:clamp(40px,4.1vw,56px)!important;line-height:1.04!important;}
+@media (min-width:1100px){.page-title-single{white-space:nowrap;}}
+@media (max-width:1099px){.page-title-single{white-space:normal;font-size:clamp(38px,6vw,54px)!important;}}
+@media (max-width:700px){.page-title-single{font-size:clamp(34px,10vw,44px)!important;line-height:1.08!important;}}
+</style>
+<style>
+/* Refined enquiry experience */
+.form-wrap{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:28px;box-shadow:0 12px 34px rgba(15,23,42,.045)}
+.enquiry-tabs{background:#f8fafc;border:0;border-radius:12px;padding:5px;gap:5px;margin-bottom:30px;overflow:visible}
+.enquiry-tab{border:0!important;border-radius:8px;padding:12px 10px;color:#475569;font-size:13px}
+.enquiry-tab.active{background:#fff;color:var(--primary);box-shadow:0 2px 8px rgba(15,23,42,.08)}
+.form-panel-title{font-size:20px;letter-spacing:-.02em}
+.form-panel-desc{font-size:14px;max-width:640px}
+.f-stack{gap:18px}.f-field label{font-size:12.5px}.f-field input,.f-field textarea{background:#fbfdff;border:1px solid #dbe3ec;border-radius:9px;padding:12px 14px}.f-field input:focus,.f-field textarea:focus{background:#fff;border-color:var(--primary);box-shadow:0 0 0 3px rgba(0,91,172,.08)}
+.form-panel .btn-primary{border-radius:9px;min-height:48px}
+@media(max-width:700px){.form-wrap{padding:18px}.enquiry-tabs{display:grid;grid-template-columns:1fr 1fr}.enquiry-tab{white-space:normal;line-height:1.25}.f-row{grid-template-columns:1fr!important}}
+</style>
+<link href="assets/css/consistency.css" rel="stylesheet"/></head>
+<body>
+<a class="sr-only" href="#main-content" style="position:absolute;left:-9999px;top:4px;padding:8px 16px;background:var(--primary);color:#fff;border-radius:4px;font-weight:600;z-index:9999;">Skip to main content</a>
+<header class="site-header" role="banner"><div class="wrap nav-row"><a aria-label="AVIORA MedTech home" class="logo" href="index.html"><img alt="AVIORA MedTech" class="logo-img" fetchpriority="high" height="54" loading="eager" src="assets/images/logo-aviora-medtech.png" width="251"/></a><nav aria-label="Primary navigation" class="main-nav"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Capabilities</a><a href="quality.html">Quality</a><a href="manufacturing.html">Manufacturing</a><a aria-current="page" class="active" href="contact.html">Contact</a></nav><div class="header-cta"><button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open navigation menu" class="mobile-toggle"><svg fill="none" height="20" viewbox="0 0 24 24" width="20"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></button></div></div></header>
+<div aria-label="Navigation menu" aria-modal="true" class="mobile-menu" id="mobileMenu" role="dialog"><div class="mm-head"><img alt="AVIORA MedTech" loading="lazy" src="assets/images/logo-aviora-medtech.png"/><button aria-label="Close navigation menu" class="mm-close"><svg fill="none" height="20" viewbox="0 0 24 24" width="20"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></button></div><nav aria-label="Mobile navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Capabilities</a><a href="quality.html">Quality</a><a href="manufacturing.html">Manufacturing</a><a aria-current="page" href="contact.html">Contact</a></nav></div>
+<main id="main-content">
+<!-- PAGE HERO -->
+<section class="page-hero-new"><div class="wrap"><span class="eyebrow">Get in touch</span><h1 class="page-title-single">Speak with the AVIORA team.</h1><p>Medical technology, AI &amp; SaMD, regulatory services and general enquiries. We respond within 24 business hours.</p></div></section>
+<!-- CONTACT LAYOUT -->
+<section class="section">
+<div class="wrap">
+<div class="contact-layout">
+<!-- LEFT: details -->
+<div>
+<span class="eyebrow" style="margin-bottom:4px;">Contact details</span>
+<a class="contact-detail" href="mailto:info@avioramedtech.com">
+<div class="contact-detail-icon" style="width:44px;height:44px;border-radius:10px;"><svg fill="none" height="16" viewbox="0 0 24 24" width="16"><path d="M4 4h16v16H4V4ZM4 9l8 6 8-6" stroke="var(--primary)" stroke-linejoin="round" stroke-width="1.8"></path></svg></div>
+<div>
+<div class="contact-detail-label">Email</div>
+<div class="contact-detail-value" style="color:var(--primary);">info@avioramedtech.com</div>
+</div>
+</a>
+<a class="contact-detail" href="tel:+919099721011">
+<div class="contact-detail-icon" style="width:44px;height:44px;border-radius:10px;"><svg fill="none" height="16" viewbox="0 0 24 24" width="16"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z" stroke="var(--primary)" stroke-width="1.8"></path></svg></div>
+<div>
+<div class="contact-detail-label">Phone</div>
+<div class="contact-detail-value">+91 9099721011</div>
+<div class="contact-detail-sub">Mon – Sat, 9 AM – 6 PM IST</div>
+</div>
+</a>
+<a class="contact-detail" href="https://wa.me/919099721011" rel="noopener" target="_blank">
+<div class="contact-detail-icon" style="width:44px;height:44px;border-radius:10px;background:rgba(37,211,102,0.1);"><svg fill="none" height="16" viewbox="0 0 24 24" width="16"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z" stroke="#25D366" stroke-width="1.8"></path></svg></div>
+<div>
+<div class="contact-detail-label">WhatsApp</div>
+<div class="contact-detail-value" style="color:#128C7E;">Chat with our team</div>
+</div>
+</a>
+<div class="contact-detail">
+<div class="contact-detail-icon" style="width:44px;height:44px;border-radius:10px;"><svg fill="none" height="16" viewbox="0 0 24 24" width="16"><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7Z" stroke="var(--primary)" stroke-width="1.8"></path></svg></div>
+<div>
+<div class="contact-detail-label">Office</div>
+<div class="contact-detail-value">FF 4, 9 Square, Sama Savli Road</div>
+<div class="contact-detail-sub">Vadodara 390024, Gujarat, India</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: tabbed forms -->
+<div>
+<div class="form-wrap">
+<!-- Tab buttons -->
+<div class="enquiry-tabs" role="tablist">
+<button aria-selected="true" class="enquiry-tab active" onclick="switchTab(this,'tab-medtech')" role="tab">Medical Technology</button>
+<button aria-selected="false" class="enquiry-tab" onclick="switchTab(this,'tab-ai')" role="tab">AI &amp; SaMD</button>
+<button aria-selected="false" class="enquiry-tab" onclick="switchTab(this,'tab-regulatory')" role="tab">Regulatory</button>
+<button aria-selected="false" class="enquiry-tab" onclick="switchTab(this,'tab-general')" role="tab">General</button>
+</div>
+<div class="form-panel active" id="tab-medtech"><div class="form-panel-header"><div class="form-panel-title">Discuss a medical technology project</div><div class="form-panel-desc">Tell us about your product, development requirement or collaboration opportunity.</div></div><form onsubmit="event.preventDefault();this.querySelector('.f-success').style.display='block';"><div class="f-stack"><div class="f-row"><div class="f-field"><label>Full name</label><input placeholder="Your name" required="" type="text"/></div><div class="f-field"><label>Company</label><input placeholder="Your organisation" type="text"/></div></div><div class="f-row"><div class="f-field"><label>Email</label><input required="" type="email"/></div><div class="f-field"><label>Phone</label><input type="tel"/></div></div><div class="f-field"><label>Project or requirement</label><textarea placeholder="Product, development stage, requirements or collaboration..." rows="4"></textarea></div><button class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;font-size:15px;" type="submit">Send Enquiry</button><div class="f-success">✓ Thank you — your enquiry has been received.</div></div></form></div>
+<div class="form-panel" id="tab-ai"><div class="form-panel-header"><div class="form-panel-title">AI &amp; SaMD enquiry</div><div class="form-panel-desc">Share your healthcare software concept, intended use and current development stage.</div></div><form onsubmit="event.preventDefault();this.querySelector('.f-success').style.display='block';"><div class="f-stack"><div class="f-row"><div class="f-field"><label>Full name</label><input required="" type="text"/></div><div class="f-field"><label>Company</label><input type="text"/></div></div><div class="f-row"><div class="f-field"><label>Email</label><input required="" type="email"/></div><div class="f-field"><label>Phone</label><input type="tel"/></div></div><div class="f-field"><label>Project details</label><textarea placeholder="Intended use, users, development stage and support required..." rows="4"></textarea></div><button class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;font-size:15px;" type="submit">Send AI &amp; SaMD Enquiry</button><div class="f-success">✓ Thank you — your enquiry has been received.</div></div></form></div>
+<div class="form-panel" id="tab-regulatory"><div class="form-panel-header"><div class="form-panel-title">Regulatory &amp; compliance enquiry</div><div class="form-panel-desc">Tell us the product type, target market and regulatory support you require.</div></div><form onsubmit="event.preventDefault();this.querySelector('.f-success').style.display='block';"><div class="f-stack"><div class="f-row"><div class="f-field"><label>Full name</label><input required="" type="text"/></div><div class="f-field"><label>Company</label><input type="text"/></div></div><div class="f-row"><div class="f-field"><label>Email</label><input required="" type="email"/></div><div class="f-field"><label>Target market</label><input placeholder="India, EU, US or other" type="text"/></div></div><div class="f-field"><label>Regulatory requirement</label><textarea placeholder="Product, classification, documentation or submission support required..." rows="4"></textarea></div><button class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;font-size:15px;" type="submit">Send Regulatory Enquiry</button><div class="f-success">✓ Thank you — your enquiry has been received.</div></div></form></div>
+<div class="form-panel" id="tab-general"><div class="form-panel-header"><div class="form-panel-title">General enquiry</div><div class="form-panel-desc">For partnerships, suppliers, media or other enquiries.</div></div><form onsubmit="event.preventDefault();this.querySelector('.f-success').style.display='block';"><div class="f-stack"><div class="f-row"><div class="f-field"><label>Full name</label><input required="" type="text"/></div><div class="f-field"><label>Organisation</label><input type="text"/></div></div><div class="f-row"><div class="f-field"><label>Email</label><input required="" type="email"/></div><div class="f-field"><label>Phone</label><input type="tel"/></div></div><div class="f-field"><label>Message</label><textarea placeholder="Tell us how we can help..." rows="4"></textarea></div><button class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;font-size:15px;" type="submit">Send Message</button><div class="f-success">✓ Thank you — your message has been received.</div></div></form></div>
+</div><!-- /form-wrap -->
+</div>
+</div>
+</div>
+</section>
+<script>
+function switchTab(btn, panelId) {
+  document.querySelectorAll('.enquiry-tab').forEach(t => {
+    t.classList.remove('active');
+    t.setAttribute('aria-selected','false');
+  });
+  document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected','true');
+  document.getElementById(panelId).classList.add('active');
+}
+</script>
+</main>
+<footer class="site-footer" role="contentinfo">
+<div class="wrap">
+<div class="footer-top">
+<div>
+<div class="footer-logo">
+<img alt="AVIORA MedTech" class="footer-logo-img" height="108" loading="lazy" src="assets/images/logo-aviora-medtech.png" style="width:auto;height:32px;" width="501"/>
+</div>
+<p class="footer-tagline">Medical technology, AI-enabled healthcare solutions and regulatory expertise — from concept to market.</p>
+<div class="social-row" style="margin-top:20px;">
+<a aria-label="LinkedIn" class="social-link" href="#"><svg fill="currentColor" height="15" viewbox="0 0 24 24" width="15"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"></path></svg></a>
+<a aria-label="YouTube" class="social-link" href="#"><svg fill="currentColor" height="15" viewbox="0 0 24 24" width="15"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5v-7l6.3 3.5-6.3 3.5z"></path></svg></a>
+<a aria-label="WhatsApp" class="social-link" href="https://wa.me/919099721011"><svg fill="currentColor" height="15" viewbox="0 0 24 24" width="15"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"></path></svg></a>
+</div>
+</div>
+<div class="footer-col">
+<h4>Products</h4>
+<a href="product-disposable-trocars.html">Single Use Trocars</a>
+<a href="product-linear-cutter-stapler.html">Single Use Linear Cutter</a>
+<a href="product-pph-stapler.html">Single Use Hemorrhoidal Stapler</a>
+<a href="product-polymer-ligating-clips.html">Polymer Ligating Clips</a>
+<a href="product-skin-stapler.html">Single Use Skin Stapler &amp; Remover</a>
+</div>
+<div class="footer-col">
+<h4>Company</h4>
+<a href="about.html">About Us</a>
+<a href="quality.html">Quality &amp; Compliance</a>
+<a href="manufacturing.html">Manufacturing</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="footer-col">
+<h4>Contact</h4>
+<a href="mailto:info@avioramedtech.com">info@avioramedtech.com</a>
+<a href="tel:+919099721011">+91 9099721011</a>
+<a href="https://wa.me/919099721011">WhatsApp Chat</a>
+<a href="contact.html" style="font-size:12px;margin-top:6px;color:rgba(255,255,255,0.35);">FF 4, 9 Square, Sama Savli Road, Vadodara 390024, Gujarat, India</a>
+</div>
+</div>
+</div>
+<div class="wrap">
+<div class="footer-bottom">
+<span>© 2026 AVIORA MedTech LLP. All rights reserved.</span>
+<span><a href="privacy.html" style="color:rgba(255,255,255,0.5);">Privacy Policy</a>  ·  <a href="terms.html" style="color:rgba(255,255,255,0.5);">Terms &amp; Conditions</a></span>
+</div>
+</div>
+</footer>
+<!-- WhatsApp float -->
+<a aria-label="Chat on WhatsApp" class="wa-float" href="https://wa.me/919099721011" rel="noopener" target="_blank">
+<svg fill="currentColor" height="26" viewbox="0 0 24 24" width="26"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-2.9-1.2-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6-.7 1.4-1.4 1.3-.9 2.1 1.1 2 2.2 2.7 3.1 3.1.5.2.8.2 1-.1.3-.3.7-1 .9-1.3.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"></path></svg>
+</a>
+<!-- Sticky mobile CTA --><script defer="" src="assets/js/main.js"></script>
+</body>
+</html>
