@@ -478,3 +478,25 @@ div[style*="position:sticky;top:100px"]{position:static!important;}
 .home-cta-inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:48px}.home-cta h2{color:#fff;font-size:clamp(30px,3.5vw,46px);margin:10px 0}.home-cta p{color:rgba(255,255,255,.72);margin:0}.eyebrow.light{color:#73c7f3}.btn-light{background:#fff;color:#07356b;border-color:#fff;white-space:nowrap}.btn-light:hover{background:#edf7fd;color:#07356b}
 @media(max-width:1050px){.home-hero-grid{grid-template-columns:1fr;min-height:auto}.home-hero-copy{padding:60px 0 44px}.home-hero-media{height:380px;min-height:0;margin:0 calc((100vw - min(1180px, calc(100vw - 48px)))/-2)}.home-hero-media:before{display:none}.capability-strip{grid-template-columns:1fr}.capability-item,.capability-item:first-child,.capability-item:last-child{padding:28px 52px 28px 0;border-right:0;border-bottom:1px solid var(--line)}.capability-item:last-child{border-bottom:0}.why-grid{grid-template-columns:1fr;gap:14px}.why-grid>div{padding:26px 24px}.home-cta-inner{align-items:flex-start;flex-direction:column;gap:28px}}
 @media(max-width:700px){.home-hero{padding-top:68px}.home-hero-copy{padding:46px 0 38px}.home-hero-copy h1{font-size:clamp(38px,11vw,48px);margin:14px 0 26px}.home-hero-media{height:270px;margin-left:-24px;margin-right:-24px}.home-hero-media img{object-position:66% center}.capability-item,.capability-item:first-child,.capability-item:last-child{grid-template-columns:58px 1fr;gap:16px;padding-right:40px}.cap-icon{width:54px;height:54px;border-radius:14px}.cap-icon svg{width:26px;height:26px}.capability-item .cap-arrow{right:8px;font-size:21px}.why-grid>div{padding:24px 20px}.lifecycle{gap:24px 14px}.home-cta{padding:52px 0}}
+
+
+/* 2026-09 footer refinement + homepage heading lock */
+@media(min-width:1051px){
+  .why-aviora .section-head.compact{max-width:none}
+  .why-aviora .section-head.compact h2{white-space:nowrap;font-size:clamp(34px,3.15vw,46px);letter-spacing:-.035em}
+}
+.site-footer-v2{background:linear-gradient(135deg,#061534 0%,#08244c 100%);color:#b8c6d9;border-top:1px solid rgba(255,255,255,.07)}
+.footer-v2-grid{display:grid;grid-template-columns:1.7fr .9fr .8fr 1.35fr;gap:52px;padding:58px 0 44px}
+.footer-v2-brand{padding-right:24px}.footer-v2-logo{display:inline-flex;align-items:center;margin-bottom:20px}.footer-v2-logo img{width:auto;height:40px;filter:brightness(0) invert(1);opacity:.96}
+.footer-v2-brand p{max-width:390px;margin:0;color:#aebdd1;font-size:14px;line-height:1.7}
+.footer-v2-col h4{margin:0 0 17px;color:#fff;font-size:12px;font-family:'IBM Plex Mono',monospace;letter-spacing:.11em;text-transform:uppercase}
+.footer-v2-col a{display:block;width:max-content;max-width:100%;padding:5px 0;color:#aebdd1;font-size:13.5px;line-height:1.45;transition:color .2s ease,transform .2s ease}
+.footer-v2-col a:hover{color:#fff;transform:translateX(2px)}
+.footer-v2-contact address{font-style:normal;color:#d4deea;font-size:13.5px;line-height:1.65;margin:0 0 13px;padding-left:18px;position:relative}
+.footer-v2-contact address:before{content:'';position:absolute;left:0;top:7px;width:7px;height:7px;border:1.5px solid #59b9ed;border-radius:50%}
+.footer-v2-contact address:after{content:'';position:absolute;left:2.5px;top:15px;width:2px;height:5px;background:#59b9ed;transform:rotate(45deg);border-radius:2px}
+.footer-v2-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;color:#8092aa;font-size:11.5px}
+.footer-v2-bottom nav{display:flex;align-items:center;gap:22px}.footer-v2-bottom a{color:#93a5bb}.footer-v2-bottom a:hover{color:#fff}
+@media(max-width:1050px){.footer-v2-grid{grid-template-columns:1.4fr 1fr 1fr;gap:38px}.footer-v2-contact{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.08);padding-top:28px}.why-aviora .section-head.compact h2{white-space:normal}}
+@media(max-width:700px){.footer-v2-grid{grid-template-columns:1fr 1fr;gap:30px 24px;padding:44px 0 34px}.footer-v2-brand{grid-column:1/-1;padding-right:0}.footer-v2-contact{grid-column:1/-1}.footer-v2-bottom{align-items:flex-start;flex-direction:column;gap:12px}.footer-v2-bottom nav{flex-wrap:wrap;gap:10px 18px}}
+@media(max-width:430px){.footer-v2-grid{grid-template-columns:1fr}.footer-v2-col,.footer-v2-contact{grid-column:1}.footer-v2-contact{padding-top:24px}}
