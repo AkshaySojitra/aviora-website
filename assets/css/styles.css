@@ -620,3 +620,24 @@ div[style*="position:sticky;top:100px"]{position:static!important;}
   .site-footer-v2 .footer-v2-grid{padding-top:40px}
   .site-footer-v2 .footer-v2-logo{height:auto}
 }
+
+/* 2026-09-30 compact footer heading-to-content spacing */
+@media (min-width:1051px){
+  .site-footer-v2 .footer-v2-col h4{
+    min-height:0!important;
+    height:auto!important;
+    padding-top:2px;
+    margin:0 0 9px!important;
+  }
+  .site-footer-v2 .footer-v2-col a{
+    padding-top:3px;
+    padding-bottom:3px;
+  }
+  .site-footer-v2 .footer-v2-contact address{
+    margin-top:0;
+    margin-bottom:9px;
+  }
+}
+@media (max-width:1050px){
+  .site-footer-v2 .footer-v2-col h4{margin-bottom:10px!important;}
+}
