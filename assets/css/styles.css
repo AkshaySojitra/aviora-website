@@ -510,8 +510,6 @@ div[style*="position:sticky;top:100px"]{position:static!important;}
 .footer-v2-col a{display:block;width:max-content;max-width:100%;padding:5px 0;color:#aebdd1;font-size:13.5px;line-height:1.45;transition:color .2s ease,transform .2s ease}
 .footer-v2-col a:hover{color:#fff;transform:translateX(2px)}
 .footer-v2-contact address{font-style:normal;color:#d4deea;font-size:13.5px;line-height:1.65;margin:0 0 13px;padding-left:18px;position:relative}
-.footer-v2-contact address:before{content:'';position:absolute;left:0;top:7px;width:7px;height:7px;border:1.5px solid #59b9ed;border-radius:50%}
-.footer-v2-contact address:after{content:'';position:absolute;left:2.5px;top:15px;width:2px;height:5px;background:#59b9ed;transform:rotate(45deg);border-radius:2px}
 .footer-v2-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;color:#8092aa;font-size:11.5px}
 .footer-v2-bottom nav{display:flex;align-items:center;gap:22px}.footer-v2-bottom a{color:#93a5bb}.footer-v2-bottom a:hover{color:#fff}
 @media(max-width:1050px){.footer-v2-grid{grid-template-columns:1.4fr 1fr 1fr;gap:38px}.footer-v2-contact{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.08);padding-top:28px}.why-aviora .section-head.compact h2{white-space:normal}}
@@ -563,3 +561,11 @@ div[style*="position:sticky;top:100px"]{position:static!important;}
   .lifecycle{grid-template-columns:1fr!important}
   .life-step{border-right:0!important}
 }
+
+/* 2026-09-30 footer alignment and contact icon correction */
+.site-footer-v2 .footer-v2-grid{align-items:start!important;}
+.site-footer-v2 .footer-v2-brand,.site-footer-v2 .footer-v2-col{align-self:start!important;margin-top:0!important;}
+.site-footer-v2 .footer-v2-logo{margin-top:0!important;}
+.site-footer-v2 .footer-v2-col h4{margin-top:0!important;}
+.site-footer-v2 .footer-v2-contact address{padding-left:26px!important;position:relative;}
+.site-footer-v2 .footer-location-icon{position:absolute;left:0;top:2px;width:17px;height:17px;fill:none;stroke:#59b9ed;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
